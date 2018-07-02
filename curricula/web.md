@@ -104,7 +104,7 @@ Without further ado:
 
 <details>
   <summary>React Basics</summary>
-<details>
+</details>
 
 <details>
   <summary>React Routing and Architecture</summary>
