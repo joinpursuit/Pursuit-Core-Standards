@@ -18,4 +18,19 @@ Without further ado:
 
 <details>
   <summary>The Command Line</summary>
+  <p>We expect students to know all important terms and concepts related to the basic implementation and usage of the bash terminal, including:</p>
+  <ul>
+    <li>Difference between CLI and GUI</li>
+    <li>Basic filesystem navigation and manipulation (at least: 'ls', 'cd', 'touch', 'mkdir', 'rm')</li>
+    <li>System-level environment variables - what they are and how to manipulate them (more on this in the Node section)</li>
+    <li>Basic bash commands (e.g. 'sudo', 'which') and shorthand (at least: '-v', '-u', '-a', '--help')</li>
+  </ul>
+
+  <p>Accordingly, we expect students to be able to:</p>
+  <ul>
+    <li>Navigate to any folder/file in the terminal when asked</li>
+    <li>Create a file/folder anywhere they have permission to in their filesystem</li>
+    <li>Install any software with CLI support and be able to utilize it with documentation</li>
+    <li>Discern what software they have installed globally, what version it is, and how to update/uninstall/reinstall as necessary</li>
+  </ul>
 </details>
