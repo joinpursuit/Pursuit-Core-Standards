@@ -2,6 +2,7 @@
 ## Full Stack Web Development Standards
 
 ## Introduction
+
 The purpose of this document is to outline, specifically, standards for the Full Stack Web Development curriculum at Pursuit. This is not meant to be a full-fledged curriculum, nor is it meant to articulate the structure, order, or content of the Full Stack Web Development program.
 
 This outlines, specifically, the information we expect Full Stack Web graduates to know and the things we expect them to be able to do. It will be split into three separate parts:
@@ -36,6 +37,21 @@ Without further ado:
 </details>
 
 <details>
+  <summary>Local Development</summary>
+  <p>We expect students to know how to set up and maintain their local development environments, including:</p>
+  <ul>
+    <li>Installing, configuring, updating, and using text editors, including themes, fonts, and linters</li>
+    <li>Installing, configuring, updating, and using technologies important to the local implementation of full-stack web apps (for example, NPM, Express, Postgres, React, Postman, testing frameworks, deployment tools, mock data generators).</li>
+  </ul>
+
+  <p>Accordingly, we expect students to be able to:</p>
+  <ul>
+    <li>Independently set up and operate a development environment on a new computer</li>
+    <li>Utilize tools to effectively debug/test full-stack web applications</li>
+  </ul>
+</details>
+
+<details>
   <summary>Git and GitHub</summary>
   <p>We expect students to know all foundational Git commands, best practices, and terminology, including:</p>
   <ul>
@@ -54,4 +70,80 @@ Without further ado:
     <li>Create, update, checkout, and push branches</li>
     <li>Submit, annotate, comment on, and approve pull requests on GitHub</li>
   </ul>
+</details>
+
+<details>
+  <summary>Foundational JavaScript Concepts</summary>
+</details>
+
+<details>
+  <summary>Advanced JS/ES6 Concepts</summary>
+</details>
+
+<details>
+  <summary>NPM and Package Management</summary>
+</details>
+
+## Frontend Understanding
+
+<details>
+  <summary>CSS and HTML</summary>
+</details>
+
+<details>
+  <summary>The DOM and Static Sites with JavaScript</summary>
+</details>
+
+<details>
+  <summary>REST-ful APIs, JSON, and AJAX</summary>
+</details>
+
+<details>
+  <summary>React Basics</summary>
+<details>
+
+<details>
+  <summary>React Routing and Architecture</summary>
+</details>
+
+<details>
+  <summary>Redux, Context, and Advanced State Management</summary>
+</details>
+
+<details>
+  <summary>Connecting and Deploying React Applications</summary>
+</details>
+
+## Backend Understanding
+
+<details>
+  <summary>How the Internet Works</summary>
+</details>
+
+<details>
+  <summary>Full Stack Application Architecture</summary>
+</details>
+
+<details>
+  <summary>Node's HTTP module</summary>
+</details>
+
+<details>
+  <summary>Express Syntax</summary>
+</details>
+
+<details>
+  <summary>Routing, Middleware, and Error Handling</summary>
+</details>
+
+<details>
+  <summary>SQL Syntax</summary>
+</details>
+
+<details>
+  <summary>SQL Database Architecture</summary>
+</details>
+
+<details>
+  <summary>Postgres and pg-promise</summary>
 </details>
