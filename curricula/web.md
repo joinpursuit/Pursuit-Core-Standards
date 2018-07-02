@@ -84,6 +84,10 @@ Without further ado:
   <summary>NPM and Package Management</summary>
 </details>
 
+<details>
+  <summary>Unit Testing and General TDD</summary>
+</details>
+
 ## Frontend Understanding
 
 <details>
@@ -146,4 +150,8 @@ Without further ado:
 
 <details>
   <summary>Postgres and pg-promise</summary>
+</details>
+
+<details>
+  <summary>Backend-Frontend Integration and Deployment</summary>
 </details>
