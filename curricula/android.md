@@ -316,8 +316,25 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>default (package-private): methods and fields declared without a specific access modifier can only be accessed from within the class they are declared, and from any other class within the same package</li>
 	</ul>
 <li>Encapsulation, or "Keeping your Organs in you Body"</li>
+	<ul>
+	We expect the fellows to:
+		<li>understand that encapsulation allows for a developer to create classes that are designed to produce a desired result, while isolating that code from other blocks of code in the main(String[] args) method</li>
+		<li>create classes with non-static fields, and non-static methods that exhibit behaviors upon fields within the same class</li>
+	</ul>
 <li>"private" fields and "public" getter/setter methods</li>
+	<ul>
+	We expect the fellows to:
+		<li>create code where a class's member fields are declared as private</li>
+		<li>compose public methods that expose those fields to code OUTSIDE of the container class (getter methods)</li>
+		<li>compose public methods that allow those fields to be assigned or modified by code FROM OUTSIDE of the container class (setter methods)</li>
+	</ul
 <li>Instantiation, and creating instance objects with the "new" keyword</li>
+	<ul>
+	We expect fellows to:
+		<li>understand that classes are only "blueprints", and that in order for these classes to exist uniquely in memory, we must "instantiate" them</li>
+		<li>we instantiate objects or instances of a class by assigning a place for it in a block of memory, by using the "new" keyword, and calling its "constructor"</li>
+		<li>understand that constructors are special methods that, when called, create objects with all the characteristics (fields and methods) laid out to it in its class definition, as a unique instance</li>
+	</ul>
 <li>Default Constructors, Explicit Constructors, and Overloaded Constructors</li>
 </ul>
 </details>
@@ -325,10 +342,10 @@ Parallel to the Android development course, fellows will have a competitive leve
 <summary>Abstract Classes and Inheritance, or "I have my Mama's eyes, but they're still my eyes"</summary>
 </details>
 <details>
-<summary>Interfaces and Polymorphism</summary>
+<summary>Interfaces and Polymorphism, or "I'm a Human, but I'm also an Animal, and although a Lizard is an Animal, I'm NOT also a Lizard"</summary>
 </details>
 <details>
-<summary>Immutable Arrays, ArrayLists, Maps, and Sets</summary>
+<summary>Immutable Arrays, Lists, Maps, and Sets</summary>
 </details>
 <details>
 <summary>Generics and Type Erasure</summary>
