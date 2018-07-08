@@ -333,7 +333,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect fellows to:
 		<li>understand that classes are only "blueprints", and that in order for these classes to exist uniquely in memory, we must "instantiate" them</li>
 		<li>we instantiate objects or instances of a class by assigning a place for it in a block of memory, by using the "new" keyword, and calling its "constructor"</li>
-		<li>understand that constructors are special methods that, when called, create objects with all the characteristics (fields and methods) laid out to it in its class definition, as a unique instance</li>
+		<li>understand that constructors are special methods that, when called, create objects with all the characteristics (fields and methods) described in its class definition, as a unique instance</li>
 	</ul>
 <li>Default Constructors, Explicit Constructors, and Overloaded Constructors</li>
 </ul>
