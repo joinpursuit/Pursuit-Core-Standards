@@ -390,13 +390,54 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>interface methods must be implemented in classes that implement the interface by "overriding" the method signatures, and adding method definition code blocks that return a value matching the method signature's return type</li>
 		<li>although child classes can only extend from a single class, child classes can implement a countless number of interfaces, i.e.: class Bird extends Animal implements Flight, Feathers, Nests</li>
 	</ul>
+<li>Anonymous Class Instances</li>
+	<ul>
+	We expect fellows be aware of the fact that:
+		<li>anonymous class instances can be used to override methods within concrete parent classes as-needed without having to subclass them</li>
+		<li>anonymous class instances can be used to add definitions to the method signatures of abstract classes or interfaces as-needed without having to subclass them, as they typically should not be instantiated, but rather subclassed</li>
+		<li>anonymous classes and lambdas in Java are effectively interchangeable</li>
+	</ul>
 </ul>
 </details>
 <details>
-<summary>Anonymous Class Instances</summary>
-</details>
-<details>
 <summary>Data Structures and Collections in Java</summary>
+<ul>
+<li>Arrays in Java</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Abstract Data Types</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Collections in Java</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Lists and ArrayLists</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Maps and HashMaps</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Sets and HashSets</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>Stacks and Queues</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+</ul>
 </details>
 <details>
 <summary>Generics and Type Erasure</summary>
@@ -408,7 +449,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <summary>Introduction to Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
 </details>
 
-## Unit 2 - XML Layout Design, Activity Lifecycle, and RecyclerView Management
+## Unit 2 - XML Layout Design, Activity Lifecycle, SharedPreferences, and RecyclerView Management
 
 ## Unit 3 - APIs, JSON, Retrofit, and Threading (Concurrency and Parallelism)
 
