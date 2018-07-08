@@ -286,7 +286,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Method Overloading</li>
 	<ul>
 	We expect fellows to understand that:
-		<li>a class can have and call multiple methods of the same</li>
+		<li>a class can have and call multiple methods of the same method signature</li>
 		<li>Java can tell the difference between these methods based on the order, number, and type of parameters in the method's signature for each method</li>
 	</ul>
 <li>Getting input from the user</li>
@@ -336,6 +336,14 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>understand that constructors are special methods that, when called, create objects with all the characteristics (fields and methods) described in its class definition, as a unique instance</li>
 	</ul>
 <li>Default Constructors, Explicit Constructors, and Overloaded Constructors</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>default constructors are available to all classes once they are defined, and can be called by using the name of the class, immediately followed by opening and closing parentheses, i.e.: new Main();</li>
+		<li>once an explicit contructor is composed within a class, the default constructor becomes inaccessable, and must be replecated within a class explicitly, if so desired</li>
+		<li>constructors, like methods, can have typed parameters, that are used to initialize the value of member variables or fields upon instantiation by using the "this" keyword, i.e. this.name = name;</li>
+		<li>constructors, like methods, can be "overloaded", meaning a class can have and call multiple constructors with the same signature</li>
+		<li>Java can tell the difference between these constructors based on the order, number, and type of parameters in the constructor's signature for each constructor</li>
+	</ul>
 </ul>
 </details>
 <details>
