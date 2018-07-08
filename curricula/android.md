@@ -357,6 +357,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>unless the fields are static, all state and behavior characteristics will only affect change in the child class's instances, not the parent's instances</li>
 		<li>if a child class's inherited methods are intended to be updated, they can be "overridden", and modified with a call to "super" to retain the parent method's original funtionality, followed by new code</li>
 		<li>if a child class's inherited methods are intended to be replaced, they can be "overridden", and modified WITHOUT a call to "super", followed by new code</li>
+		<li>a child class can only inherit characteristics from a single parent class, i.e.: class Child extends Parent</li>
 	</ul>
 <li>Abstract Classes vs. Concrete Classes</li>	
 	<ul>
@@ -364,8 +365,8 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>unlike concrete classes, Abstract Classes should NOT be directly instantiated, but rather extended by child classes which are then themselves instantiated</li>
 		<li>abstract classes are defined as "abstract" in their class definitions</li>
 		<li>abstract classes can have both methods with signatures and definitions, or methods with only method signatures - method signatures without method definitions must be defined as "abstract"</li>
-		<li>abstract methods must be implemented in child classes by "overriding" them, and adding method definition code blocks that return a value matching the method signature's return type</li>
-		<li></li>
+		<li>abstract methods must be implemented in child classes that extend the abstract class by "overriding" them, and adding method definition code blocks that return a value matching the method signature's return type</li>
+		<li>abstract classes should never be defined with the "final" keyword, since it would prevent the abstract class from being "extended" by child classes</li>
 	</ul>
 </ul>
 </details>
@@ -378,13 +379,16 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>the static type of an object is the type on the left side of the assignment (known at compile time), and the dynamic type of an object is the type of the class used as the constructor</li>
 		<li>a child class, at compile time, can be defined statically as being a type of any class of which it is a child, or from which it inherits funtionality ("extends" from a parent class, or "implements" an interface, respectively), i.e.: Animal human = new Human();</li>
 		<li>a child class assigned in this way has limited funtionality, and can only expose the methods it shares with the parent class to which it is statically typed</li>
-		<li>a child class previously instantiated as a static type of itself, can be "upcasted" to its parent's type safely, i.e.: Human human = new Human(); Animal animal = (Animal) human;</li>
-		<li>a parent class previously instantiated as a static type of itself, can be "downcasted" to its child's type, but with possible risks - since there is no guarantee that the parent will have the child's funtionality at runtime, i.e.: Animal animal = new Human(); Human human = (Human) animal; [OKAY] Animal animal = new Animal(); Human human = (Human) animal; [BAD]</li>
+		<li>a child class previously instantiated with a static type of itself, can be "upcasted" to its parent's type safely, i.e.: Human human = new Human(); Animal animal = (Animal) human;</li>
+		<li>a parent class previously instantiated with a static type of itself, can be "downcasted" to its child's type, but with possible risks - since there is no guarantee that the parent will have the child's funtionality at runtime, i.e.: Animal animal = new Human(); Human human = (Human) animal; [OKAY] Animal animal = new Animal(); Human human = (Human) animal; [BAD]</li>
 	</ul>
 <li>Interfaces vs. Abstract Classes</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>interfaces are similar to abstract classes in that interface methods are simply method signatures, like abstract methods</li>
+		<li>interface methods are all only method signatures, and interfaces can only contain method signatures</li>
+		<li>interface methods must be implemented in classes that implement the interface by "overriding" the method signatures, and adding method definition code blocks that return a value matching the method signature's return type</li>
+		<li>although child classes can only extend from a single class, child classes can implement a countless number of interfaces, i.e.: class Bird extends Animal implements Flight, Feathers, Nests</li>
 	</ul>
 </ul>
 </details>
@@ -392,7 +396,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <summary>Anonymous Class Instances</summary>
 </details>
 <details>
-<summary>Immutable Arrays, Lists, Maps, and Sets</summary>
+<summary>Data Structures and Collections in Java</summary>
 </details>
 <details>
 <summary>Generics and Type Erasure</summary>
