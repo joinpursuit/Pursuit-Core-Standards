@@ -294,6 +294,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect the fellows to be able to:
 		<li>get input passed to the program as command line arguments through the args parameter in the public static void main(String[] args) method</li>
 		<li>get input from the keyboard passed into an instance of the Scanner class</li>
+		<li>utilize import statements whenever Java requires it</li>
 	</ul>
 </ul>
 </details>
@@ -412,10 +413,10 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect fellows to understand that:
 		<li></li>
 	</ul>
-<li>Collections in Java</li>
+<li>Importing packages in Java</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>the Collections library, and various other data structures come standard in the JDK since Java 6, and can be brought into a project using an import statement, i.e. import java.util.*;</li>
 	</ul>
 <li>Lists and ArrayLists</li>
 	<ul>
@@ -451,9 +452,9 @@ Parallel to the Android development course, fellows will have a competitive leve
 
 ## Unit 2 - XML Layout Design, Activity Lifecycle, SharedPreferences, and RecyclerView Management
 
-## Unit 3 - APIs, JSON, Retrofit, and Threading (Concurrency and Parallelism)
+## Unit 3 - APIs, JSON, Retrofit, Picasso, External Libraries, and Threading (Concurrency and Parallelism)
 
-## Unit 4 - Fragments, Services, Animation, and Notifications
+## Unit 4 - Fragments, Services, Animation, MediaPlayer, and Notifications
 
 ## Unit 5 - SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
 
