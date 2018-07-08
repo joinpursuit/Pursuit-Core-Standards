@@ -163,6 +163,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>While Loops and Do-While Loops</summary>
+<ul>
 <li>While Loops as If Statements that run more than once</li>
 	<ul>
 	We expect fellows to understand that:
@@ -190,9 +191,11 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect fellows to understand that:
 		<li>Do-While loops are effectively whule loops, with code blocks that are executed at least once, regardless of whether the conditional of the while loop intitially evaluates to true</li>
 	</ul>
+</ul>
 </details>
 <details>
 <summary>Strings and For Loops</summary>
+<ul>
 <li>Strings vs. primitive types</li>
 	<ul>
 	We expect fellows to mark the distinction between:
@@ -227,6 +230,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>++counter: where a counter variable is reassigned a value based on its previous value plus the int one (1), PRIOR to the beginning of every iteration</li>
 		<li>counter++: where a counter variable is reassigned a value based on its previous value plus the int one (1), every time that iteration is run ONLY WHEN IT HAS REACHED COMPLETION</li>
 	</ul>
+</ul>
 </details>
 <details>
 <summary>Static and Instance Methods and Fields</summary>
@@ -271,6 +275,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>static methods belong to a class, which means that you have to call the method on the class itself, i.e.: Main.myMethod();</li>
 		<li>non-static methods cannot be called on the class, they must only be called on an instance of the class</li>
 	</ul>
+</ul>
 <li>Method Parameters and Parameter Types</li>
 	<ul>
 	We expect fellows to create methods:
@@ -294,6 +299,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>Concrete Classes, Access Modifiers, and Encapsulation</summary>
+<ul>
 <li>The Three Pillars of Java OOP</li>
 	<ul>
 	We expect the fellows to be aware of the three pillars of Object Oriented Programming in Java:
@@ -313,7 +319,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>"private" fields and "public" getter/setter methods</li>
 <li>Instantiation, and creating instance objects with the "new" keyword</li>
 <li>Default Constructors, Explicit Constructors, and Overloaded Constructors</li>
-<li></li>
+</ul>
 </details>
 <details>
 <summary>Abstract Classes and Inheritance</summary>
