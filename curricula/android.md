@@ -128,7 +128,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>AND logical operators are represented with double ampersands (&&), meaning the values evaluated before and after the && must both be true in order for the entire statement to evaluate to true</li>
 		<li>OR logical operators are represented with double pipes (||), meaning that either the value evaluated before or after the || must be true in order for the entire statement to evaluate to true</li>
 		<li>IS logical operators are represented with double equals (==), meaning that the value evaluated before the == must be equal to the value after the ==, in order for the entire statement to evaluate to true</li>
-		<li>NOT logical operators are represented with bang equals (!=), meaning that the value evaluated before the != must NOT be equal to the value after the ==, in order for the entire statement to evaluate to true</li>
+		<li>NOT logical operators are represented with bang equals (!=), meaning that the value evaluated before the != must NOT be equal to the value after the !=, in order for the entire statement to evaluate to true</li>
 		<li>NEGATION logical operators are represented with a single bang (!) placed in front of either a boolean literal wrapped in parentheses, or a variable containing a boolean value, meaning that whatever the current boolean value is, it is now the opposite; i.e.: !(true) == false, or !(false) == true</li>
 	</ul>
 <li>If Statements</li>
@@ -150,7 +150,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Ternary operator expressions for Assigning boolean values</li>
 	<ul>
 	We expect fellows to:
-		<li>Create Ternary operator expressions, where the result of the expression is immediately assigned to a boolean type variable</li>
+		<li>Create Ternary operator expressions, which are less verbose if-else statements, where the result of the expression is immediately assigned to a variable, i.e.: String voterStatus = (age >= 18) ? "voter" : "non-voter"</li>
 	</ul>
 <li>Switch Statements</li>
 	<ul>
@@ -305,7 +305,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect the fellows to be aware of the three pillars of Object Oriented Programming in Java:
 		<li>Encapsulation - declaring all methods and variables associated with an object's behavior and state respectively WITHIN the class itself, providing getter/setter methods rather than keeping all its fields publically accessible directly</li>
 		<li>Inheritance - passing state and behavior functionality from a parent class to a child class without having to rewrite all the same fields and methods</li>
-		<li>Polymorphism - the fact that classes at compile time can be defined statically as being a type of any class of which it is a child, or from which is inherits funtionality (extends from a class, or implements an interface, respectively)</li>
+		<li>Polymorphism - the fact that classes at compile time can be defined statically as being a type of any class of which it is a child, or from which it inherits funtionality ("extends" from a class, or "implements" an interface, respectively)</li>
 	</ul>
 <li>Access Modifiers</li>
 	<ul>
@@ -348,9 +348,48 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>Abstract Classes and Inheritance, or "I have my Mama's eyes, but they're still my eyes"</summary>
+<ul>
+<li>Inheriting Characteristics from Parent Classes</li>	
+	<ul>
+	We expect fellows to understand that:
+		<li>a developer can compose a class defined as a child of a parent class by using the "extends" keyword</li>
+		<li>Inheritance is the act of passing state and behavior functionality from a parent class to a child class without having to rewrite all the same fields and methods</li>
+		<li>unless the fields are static, all state and behavior characteristics will only affect change in the child class's instances, not the parent's instances</li>
+		<li>if a child class's inherited methods are intended to be updated, they can be "overridden", and modified with a call to "super" to retain the parent method's original funtionality, followed by new code</li>
+		<li>if a child class's inherited methods are intended to be replaced, they can be "overridden", and modified WITHOUT a call to "super", followed by new code</li>
+	</ul>
+<li>Abstract Classes vs. Concrete Classes</li>	
+	<ul>
+	We expect fellows to understand that:
+		<li>unlike concrete classes, Abstract Classes should NOT be directly instantiated, but rather extended by child classes which are then themselves instantiated</li>
+		<li>abstract classes are defined as "abstract" in their class definitions</li>
+		<li>abstract classes can have both methods with signatures and definitions, or methods with only method signatures - method signatures without method definitions must be defined as "abstract"</li>
+		<li>abstract methods must be implemented in child classes by "overriding" them, and adding method definition code blocks that return a value matching the method signature's return type</li>
+		<li></li>
+	</ul>
+</ul>
 </details>
 <details>
-<summary>Interfaces and Polymorphism, or "I'm a Human, but I'm also an Animal, and although a Lizard is an Animal, I'm NOT also a Lizard"</summary>
+<summary>Interfaces and Polymorphism, or "I'm a Human that does Human stuff, but I'm also an Animal that does Animal stuff (sometimes in Human ways), and although a Lizard is also an Animal that does Animal stuff (sometimes in Lizard ways), I'm NOT also a Lizard that does Lizard stuff, NOR am I an Animal that does Animal stuff in Lizard ways"</summary>
+<ul>
+<li>Polymorphism in Java</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>the static type of an object is the type on the left side of the assignment (known at compile time), and the dynamic type of an object is the type of the class used as the constructor</li>
+		<li>a child class, at compile time, can be defined statically as being a type of any class of which it is a child, or from which it inherits funtionality ("extends" from a parent class, or "implements" an interface, respectively), i.e.: Animal human = new Human();</li>
+		<li>a child class assigned in this way has limited funtionality, and can only expose the methods it shares with the parent class to which it is statically typed</li>
+		<li>a child class previously instantiated as a static type of itself, can be "upcasted" to its parent's type safely, i.e.: Human human = new Human(); Animal animal = (Animal) human;</li>
+		<li>a parent class previously instantiated as a static type of itself, can be "downcasted" to its child's type, but with possible risks - since there is no guarantee that the parent will have the child's funtionality at runtime, i.e.: Animal animal = new Human(); Human human = (Human) animal; [OKAY] Animal animal = new Animal(); Human human = (Human) animal; [BAD]</li>
+	</ul>
+<li>Interfaces vs. Abstract Classes</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Anonymous Class Instances</summary>
 </details>
 <details>
 <summary>Immutable Arrays, Lists, Maps, and Sets</summary>
