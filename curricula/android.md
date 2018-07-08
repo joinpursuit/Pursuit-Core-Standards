@@ -189,7 +189,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Do-While Loops, or Loops that run once before checking a condition</li>
 	<ul>
 	We expect fellows to understand that:
-		<li>Do-While loops are effectively whule loops, with code blocks that are executed at least once, regardless of whether the conditional of the while loop intitially evaluates to true</li>
+		<li>Do-While loops are effectively while loops, with code blocks that are executed at least once, regardless of whether the conditional of the while loop intitially evaluates to true</li>
 	</ul>
 </ul>
 </details>
@@ -199,7 +199,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Strings vs. primitive types</li>
 	<ul>
 	We expect fellows to mark the distinction between:
-		<li>Object types, like String, which begin with a capital letter (Pascal Case), while primitive types are all written in lower case</li>
+		<li>Object types, like String, begin with a capital letter (Pascal Case), while primitive types are all written in lowercase</li>
 	</ul>
 <li>Calling Methods on Strings: charAt(), length(), and .equals()</li>
 	<ul>
@@ -273,7 +273,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	<ul>
 	We expect fellows to understand that:
 		<li>static methods belong to a class, which means that you have to call the method on the class itself, i.e.: Main.myMethod();</li>
-		<li>non-static methods cannot be called on the class, they must only be called on an instance of the class</li>
+		<li>non-static methods cannot be called on the class, they must only be called on an instance of the class, i.e.: Main main = new Main(); main.myMethod();</li>
 	</ul>
 </ul>
 <li>Method Parameters and Parameter Types</li>
@@ -305,15 +305,15 @@ Parallel to the Android development course, fellows will have a competitive leve
 	We expect the fellows to be aware of the three pillars of Object Oriented Programming in Java:
 		<li>Encapsulation - declaring all methods and variables associated with an object's behavior and state respectively WITHIN the class itself, providing getter/setter methods rather than keeping all its fields publically accessible directly</li>
 		<li>Inheritance - passing state and behavior functionality from a parent class to a child class without having to rewrite all the same fields and methods</li>
-		<li>Polymorphism - the fact that classes at compile time can be defined statically as being a type of any class of which it is a child</li>
+		<li>Polymorphism - the fact that classes at compile time can be defined statically as being a type of any class of which it is a child, or from which is inherits funtionality (extends from a class, or implements an interface, respectively)</li>
 	</ul>
 <li>Access Modifiers</li>
 	<ul>
 	We expect fellows to differentiate between the four access modifiers:
 		<li>private: methods and fields declared as private can only be accessed from within the class they are declared</li>
 		<li>public: methods and fields declared as public can be accessed from outside the class</li>
-		<li>protected: methods and fields declared as private can only be accessed from within the class they are declared, and all child classes</li>
-		<li>default (package-private): methods and fields declared without a specific access modifier can only be accessed from within the class they are declared, and any other class within the same package</li>
+		<li>protected: methods and fields declared as protected can only be accessed from within the class they are declared, and all child classes of said class</li>
+		<li>default (package-private): methods and fields declared without a specific access modifier can only be accessed from within the class they are declared, and from any other class within the same package</li>
 	</ul>
 <li>Encapsulation, or "Keeping your Organs in you Body"</li>
 <li>"private" fields and "public" getter/setter methods</li>
@@ -322,7 +322,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 <details>
-<summary>Abstract Classes and Inheritance</summary>
+<summary>Abstract Classes and Inheritance, or "I have my Mama's eyes, but they're still my eyes"</summary>
 </details>
 <details>
 <summary>Interfaces and Polymorphism</summary>
