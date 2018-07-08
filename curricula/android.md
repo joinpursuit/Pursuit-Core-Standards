@@ -52,6 +52,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Printing Data from the Main Method</li>
 	<ul>
 	We expect fellows to understand that:
+		<li>Java files exist within unique "packages"</li>
 		<li>Java programs execute the code found in the main(String[] args) method of a java file first</li>
 		<li>System.out.print(); is used to print on the same line of the output screen</li>
 		<li>System.out.println(); is used to print on the next line of the output screen</li>
@@ -231,19 +232,83 @@ Parallel to the Android development course, fellows will have a competitive leve
 <summary>Static and Instance Methods and Fields</summary>
 <ul>
 <li>Classes as Blueprints for "Custom" Types</li>
+	<ul>
+	We expect fellows to analogize the construct of a Class as:
+		<li>a blueprint for the composition of an original data type</li>
+		<li>a way to create a variable that can store values in other variables</li>
+		<li>a way to create a variable that exhibits unique behaviors</li>
+	</ul>
 <li>Static Properties of a Class</li>
+	<ul>
+	We expect fellows to discover that:
+		<li>properties, or public fields of a class can be accessed statically, but private fields cannot</li>
+		<li>static fields belong to a class, which means that you have to call the field on the class itself, i.e.: Main.myField = "hello";</li>
+	</ul>
 <li>Non-Static Properties of a Class</li>
+	<ul>
+	We expect fellows to discover that:
+		<li>properties, or public fields of a class's instance are called member variables</li>
+		<li>properties, or public fields of a class's instance cannot be accessed statically, but instead an instance must be made, i.e.: Main main = new Main(); main.myField = "hello";</li>
+		<li>non-static member variables, unless assigned, will have the default values for their data type</li>
+		<li>non-static member variables are unique, and different from instance to instance, whereas static fields are shared by all instances of a class</li>
+	</ul>
 <li>Methods are Functions that can only exist as part of a Class</li>
+	<ul>
+	We expect fellows to realize that:
+		<li>unlike JavaScript, functions cannot exist outside of the constructs of a class</li>
+		<li>functions that are defined as part of a class are called Methods</li>
+	</ul>
 <li>Method return types, or returning something (primitive/class type) vs. returning nothing (void)</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>all methods have return types, which are declared in their Method signatures</li>
+		<li>methods that return a value after execution have a return type of either an object or primitive type</li>
+		<li>methods that are not expected to return a value after execution have a return type of void</li>
+	</ul>
 <li>Static Methods vs. Non-Static Methods</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>static methods belong to a class, which means that you have to call the method on the class itself, i.e.: Main.myMethod();</li>
+		<li>non-static methods cannot be called on the class, they must only be called on an instance of the class</li>
+	</ul>
 <li>Method Parameters and Parameter Types</li>
+	<ul>
+	We expect fellows to create methods:
+		<li>that can accept arguments from outside the class passed in through parameters</li>
+		<li>that have parameters declared with actual data types</li>
+		<li>with the understanding that parameter types are the type of values that can be passed into the method via arguments, and that return types are different from parameter types</li>
+	</ul>
 <li>Method Overloading</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>a class can have and call multiple methods of the same</li>
+		<li>Java can tell the difference between these methods based on the order, number, and type of parameters in the method's signature for each method</li>
+	</ul>
 <li>Getting input from the user</li>
+	<ul>
+	We expect the fellows to be able to:
+		<li>get input passed to the program as command line arguments through the args parameter in the public static void main(String[] args) method</li>
+		<li>get input from the keyboard passed into an instance of the Scanner class</li>
+	</ul>
 </ul>
 </details>
 <details>
 <summary>Concrete Classes, Access Modifiers, and Encapsulation</summary>
 <li>The Three Pillars of Java OOP</li>
+	<ul>
+	We expect the fellows to be aware of the three pillars of Object Oriented Programming in Java:
+		<li>Encapsulation - declaring all methods and variables associated with an object's behavior and state respectively WITHIN the class itself, providing getter/setter methods rather than keeping all its fields publically accessible directly</li>
+		<li>Inheritance - passing state and behavior functionality from a parent class to a child class without having to rewrite all the same fields and methods</li>
+		<li>Polymorphism - the fact that classes at compile time can be defined statically as being a type of any class of which it is a child</li>
+	</ul>
+<li>Access Modifiers</li>
+	<ul>
+	We expect fellows to differentiate between the four access modifiers:
+		<li>private: methods and fields declared as private can only be accessed from within the class they are declared</li>
+		<li>public: methods and fields declared as public can be accessed from outside the class</li>
+		<li>protected: methods and fields declared as private can only be accessed from within the class they are declared, and all child classes</li>
+		<li>default (package-private): methods and fields declared without a specific access modifier can only be accessed from within the class they are declared, and any other class within the same package</li>
+	</ul>
 <li>Encapsulation, or "Keeping your Organs in you Body"</li>
 <li>"private" fields and "public" getter/setter methods</li>
 <li>Instantiation, and creating instance objects with the "new" keyword</li>
