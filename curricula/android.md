@@ -33,7 +33,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	<ul>
 	We expect fellows to be aware that:
 		<li>Java Virtual Machines are written for almost every computer on the planet</li>
-		<li>Java code is compiled to Java ByteCode, and runs on the Java Virtual Machine<li>
+		<li>Java code is compiled to Java ByteCode, and runs on the Java Virtual Machine</li>
 		<li>The JVM and libraries that help write Java code are a part of the Java Runtime Environment (JRE)</li>
 		<li>The JVM and the JRE are contained in the Java Development Kit (JDK)</li>
 	</ul>
