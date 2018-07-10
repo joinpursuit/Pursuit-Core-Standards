@@ -10,7 +10,7 @@ The Pursuit Android Development Fellowship Technical Mastery facet begins with t
 
 Units 2 through 6 will focus primarily on the design and development of a number of group-based Android Applications, bookended by a Practical assessment.
 
-From the start of Unit 7, Android fellows will have built a group project under the crucible of a two-day hackathon challenge, along with a group capstone project culminating in a public presentation, and a personal portfolio project up until commencement (the end of Unit 10), to round off their academic prospectus. 
+From the start of Unit 7, Android fellows will have built a group project under the crucible of a two-day hackathon challenge, along with a group capstone project culminating in a public presentation, and the completion of a personal portfolio project up until commencement (the end of Unit 10), to round off their academic prospectus. 
 
 Parallel to the Android development course, fellows will have a competitive level of exposure to data structures and algorithms materials, to prepare them for both whiteboarding interviews and over-the-phone/codeshare technical interviews.
 
@@ -205,7 +205,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 	<ul>
 	We expect fellows to write code which can:
 		<li>access an individual character from a String utilizing the .charAt() method, and passing in the particular location of that character by its index as an argument, where 0 is the index of the first character, 1 is the index of the second character, etc.</li>
-		<li>aquire the number of characters within the String by calling the length() method, and understanding that the index of the last character in the String will always be equal to the value of the .length() method call,minus the integer one (1)</li>
+		<li>aquire the number of characters within the String by calling the length() method, and understanding that the index of the last character in the String will always be equal to the value of the .length() method call, minus the integer one (1)</li>
 		<li>compare to Strings to see if they are equivalent in value by calling the .equals() method on one of the Strings, then passing in another String as an argument to compare the two</li>
 	</ul>
 <li>The For Loop, or a more elegant While Loop</li>
@@ -411,6 +411,8 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>array assignment may be made in two ways - by size: int[] numArray = new int[3]; or by adding elements at assignment: String[] stringArray = {"Adam", "Becky", "Carl"};</li>
 		<li>arrays take up a contiguous space in memory, and its size cannot change after assignment (cannot add new elements), only the values of the elements stored at each index. This makes arrays immutable</li>
 		<li>array elements can be accessed by passing an index number into square brackets to the right of the variable name: numArray[2] = 42; System.out.println(stringArray[0]);</li>
+		<li>where Strings can have the method length() called upon them to return the number of characters, the number of elements in an Array is retreived by calling the actual parameter "length", not a method called "length()</li>
+		<li>like Strings, the index of the last element in an Array will always be equal to the value of the .length() property call, minus the integer one (1)</li>
 	</ul>
 <li>Abstract Data Types</li>
 	<ul>
@@ -436,12 +438,13 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>HashMaps have methods which are similar to ArrayLists, such as size(), get(), and remove(), but also have a put() method, for adding new entries, keySet(), for retrieving all the keys in a HashMap, and containsValue(), for checking if a value exists in the HashMap()</li>
 		<li>when calling get() on a HashMap instance, if the value returned after passing in a key comes back as "null", then the key does not exist in the HashMap</li>
 		<li>all keys in a HashMap must be unique, but more than one key can have the same value</li>
-		<li>when calling put() on a HashMap, if the key passed into the method already exists in the HashMap, a new entry will not be created - rather, the old entry with that key will have it's value changed to the new value<li>
+		<li>when calling put() on a HashMap, if the key passed into the method already exists in the HashMap, a new entry will not be created - rather, the old entry with that key will have it's value changed to the new value</li>
 		<li>Maps utilize two parameterized generic types wrapped in angle brackets, to describe the keys and values stored in them respectively, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: HashMap&lt;String, Integer&gt; nameAgeMap = new HashMap&lt;&gt;();</li>
 	</ul>
 <li>Sets and HashSets</li>
 	<ul>
 	We expect fellows to understand that:
+		<li>a Set is a way to store a collection of unique items, while data structures like HashSets are collections of unordered, unique objects</li>
 		<li></li>
 	</ul>
 <li>Stacks and Queues</li>
