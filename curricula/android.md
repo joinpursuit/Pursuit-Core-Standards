@@ -480,6 +480,15 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>Generics and Type Erasure</summary>
+<ul>
+<li>Generics as Parameterized Types</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>much like declaring a type for parameters within constructors, generics allow developers to add a "type" as a parameter as well</li>
+		<li>Generics allow classes to reuse constructors/methods without overloading, since the type can be declared at instantiation by passing a type into angle brackets, rather than making a constructor for every possible parameter type in existence</li>
+		<li>Generics are often seen in familiar data structures, and can be used in class composition as well</li>
+	</ul>
+</ul>
 </details>
 <details>
 <summary>Try/Catch Blocks, and Exception Handling</summary>
