@@ -479,7 +479,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 <details>
-<summary>Generics and Type Erasure</summary>
+<summary>Generics</summary>
 <ul>
 <li>Generics as Parameterized Types</li>
 	<ul>
@@ -492,6 +492,22 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>Try/Catch Blocks, and Exception Handling</summary>
+<ul>
+<li>Wrapping Exception-prone code in Try/Catch Blocks</li>
+	<ul>
+	We expect fellows to create code that:
+		<li>wraps blocks of code that can throw Exceptions in try/catch blocks</li>
+		<li>adds the funtionality of exception-throwing to methods by adding the "throws" keyword</li>
+		<li>prints the error messages produced by exceptions as stacktraces</li>
+		<li>does not use try/catch blocks to control or modify the flow of execution of a program</li>
+	</ul>
+<li>Subclass Exception to make Custom Exceptions</li>
+	<ul>
+	We expect fellows to create code that:
+		<li>subclasses Exception to make custom exceptions</li>
+		<li>produces error messages based on varying conditions</li>
+	</ul>
+</ul>
 </details>
 <details>
 <summary>Introduction to Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
