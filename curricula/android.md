@@ -445,12 +445,36 @@ Parallel to the Android development course, fellows will have a competitive leve
 	<ul>
 	We expect fellows to understand that:
 		<li>a Set is a way to store a collection of unique items, while data structures like HashSets are collections of unordered, unique objects</li>
-		<li></li>
+		<li>HashSets have methods such as size(), contains(), add(), remove(), isEmpty(), and clear(), and are good alternatives to HashMaps when writing algorithms which require storing unique objects only</li>
+		<li>HashSets utilize a single parameterized generic type wrapped in angle brackets, to describe the unique values stored in them, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: HashSet&lt;Integer&gt; primaryKey = new HashSet&lt;&gt;();</li>
 	</ul>
-<li>Stacks and Queues</li>
+<li>Stacks</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>a Stack is a way to store a collection of items where the last item added is the first item to be removed, like bullets in a magazine, or pancakes on a plate - while data structures like Stacks are collections of objects where items are added to the end, and the last object added is the first object removed</li>
+		<li>Stacks are often referred to as Last-In-First-Out, or LIFO systems</li>
+		<li>Stacks have methods such as peek() to check the value of the last element, pop() to remove the last element and return its value, push() to add an element to the back of the stack, search() to get the position of an element in relation to the last element in the stack, and empty() to check if there are any elements left</li>
+		<li>Stacks utilize a single parameterized generic type wrapped in angle brackets, to describe the unique values stored in them, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: Stack&lt;String&gt; newHireLayoffs = new Stack&lt;&gt;();</li>
+	</ul>
+<li>Queues</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>a Queue is a way to store a collection of items where the first item added is the first item to be removed, like a queue at a fancy delicatessen - while data structures like PriorityQueues are collections of objects where items are added to the end, and the first object added is the first object removed</li>
+		<li>Queues are often referred to as First-In-First-Out, or LIFO systems</li>
+		<li>Queues have methods such as peek() to check the value of the first element, poll() to remove the last element and return its value, offer() or add() to add an element to the back of the queue, and size()</li>
+		<li>PriorityQueues utilize a single parameterized generic type wrapped in angle brackets, to describe the unique values stored in them, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: PriorityQueue&lt;String&gt; retireeCandidates = new PriorityQueue&lt;&gt;();</li>
+	</ul>
+<li>"Composition over Inheritance"</li>
+	<ul>
+	We expect the fellows to be aware of the fact that:
+		<li>Abstract Data Types like Lists, Maps, Sets, Stacks, and Queues are fundamentally concepts, with Java implementations which may or may not fit ones needs</li>
+		<li>although these classes exist, it may become necessary to create classes which behave like Abstract Data types, but to not extend or implement these parent classes</li>
+		<li>any of these types or data structures can be replicated using arrays, composed objects, and generics under the hood (like ArrayLists for example)</li>
+	</ul>
+<li>The Enhanced For Loop</li>
+	<ul>
+	We expect fellows to create:
+		<li>Enhanced For Loops, also known as for-each loops, where data structures are iterated over by the number and type of objects present, rather than any particular index or key, i.e. for (String s in nameAgeMap.keySet()) { System.out.println(nameAgeMap.get(s)); }</li>
 	</ul>
 </ul>
 </details>
