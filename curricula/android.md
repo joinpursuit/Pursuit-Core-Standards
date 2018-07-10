@@ -406,12 +406,16 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Arrays in Java</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>array indices, like Strings, begin at index 0 - where the first element of the array is at index 0, the second element is at index 1, etc.</li>
+		<li>array static types are defined as the type of the elements the array intends to store, followed by square brackets, i.e.: int[] numArray; String[] stringArray;</li>
+		<li>array assignment may be made in two ways - by size: int[] numArray = new int[3]; or by adding elements at assignment: String[] stringArray = {"Adam", "Becky", "Carl"};</li>
+		<li>arrays take up a contiguous space in memory, and its size cannot change after assignment (cannot add new elements), only the values of the elements stored at each index. This makes arrays immutable</li>
+		<li>array elements can be accessed by passing an index number into square brackets to the right of the variable name: numArray[2] = 42; System.out.println(stringArray[0]);</li>
 	</ul>
 <li>Abstract Data Types</li>
 	<ul>
-	We expect fellows to understand that:
-		<li></li>
+	We expect fellows to be aware of the fact that:
+		<li>Abstract Data Types such as Lists, Maps, Sets, Stacks, and Queues are concepts for how a program can store, organize and retrieve data, while actual data structures are the implementations of these concepts in code form</li>
 	</ul>
 <li>Importing packages in Java</li>
 	<ul>
@@ -421,12 +425,19 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Lists and ArrayLists</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>a List is a way to organize data cardinally in a row, while data structures like ArrayLists and LinkedLists are used to organize a mutable array of objects</li>
+		<li>ArrayLists have methods which are different from Arrays or Strings, such as size(), add(), get(), set(), and remove()</li>
+		<li>Lists utilize a single parameterized generic type wrapped in angle brackets, to describe the objects stored in them, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: ArrayList&lt;Double&gt; degreesList = new ArrayList&lt;&gt;();</li>
 	</ul>
 <li>Maps and HashMaps</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>a Map is a way to organize data into key/value pairs like a dictionary word and its corresponding definition, while data structures like HashMaps are an unordered associative array of objects made up of key/value pairs</li>
+		<li>HashMaps have methods which are similar to ArrayLists, such as size(), get(), and remove(), but also have a put() method, for adding new entries, keySet(), for retrieving all the keys in a HashMap, and containsValue(), for checking if a value exists in the HashMap()</li>
+		<li>when calling get() on a HashMap instance, if the value returned after passing in a key comes back as "null", then the key does not exist in the HashMap</li>
+		<li>all keys in a HashMap must be unique, but more than one key can have the same value</li>
+		<li>when calling put() on a HashMap, if the key passed into the method already exists in the HashMap, a new entry will not be created - rather, the old entry with that key will have it's value changed to the new value<li>
+		<li>Maps utilize two parameterized generic types wrapped in angle brackets, to describe the keys and values stored in them respectively, and primitive type variables are autoboxed to their object forms (char becomes Character, int become Integer, etc.), i.e.: HashMap&lt;String, Integer&gt; nameAgeMap = new HashMap&lt;&gt;();</li>
 	</ul>
 <li>Sets and HashSets</li>
 	<ul>
