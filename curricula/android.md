@@ -511,6 +511,54 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 <details>
 <summary>Introduction to Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
+<ul>
+<li>Call Basic BASH Functions</li>
+	<ul>
+	We expect fellows to know fluently how to call the following commands on the command line:
+		<li>touch - to make a file</li>
+		<li>ls - to search a directory</li>
+		<li>cp - to copy a file/directory</li>
+		<li>mv - to move a file/directory, or change its name</li>
+		<li>rm - to remove/delete a file</li>
+		<li>mkdir - to make a directory</li>
+		<li>cd - to change to a directory</li>
+		<li>rmdir - to remove/delete a directory</li>
+		<li>chmod - to change permissions for a file/directory</li>
+	</ul>
+<li>Utilize more advanced BASH Commands</li>
+	<ul>
+	We expect fellows to be aware of the following commands on the command line:
+		<li>grep - to search files more effectively</li>
+		<li>top - to list running processes</li>
+		<li>kill - to kill running processes</li>
+		<li>sudo - to run commands as a super user</li>
+		<li>curl - to download from the internet</li>
+		<li>cat - to view the contents of files</li>
+		<li>nano - to edit files simply from the command line</li>
+		<li>vim - to edit files more elegantly from the command line</li>
+		<li>adb - to explore android devices</li>
+	</ul>
+<li>Manage Version Control with Git and GitHub</li>
+	<ul>
+	We expect fellows to implement the following commands on the command line:
+		<li>git clone</li>
+		<li>git init</li>
+		<li>git add</li>
+		<li>git commit -m</li>
+		<li>git remote add origin</li>
+		<li>git push</li>
+		<li>git fetch</li>
+		<li>git pull</li>
+		<li>git stash</li>
+		<li>git stash pop</li>
+		<li>git branch</li>
+		<li>git checkout</li>
+		<li>git clean -fdx</li>
+		<li>git reset --soft</li>
+		<li>git reset --mixed</li>
+		<li>git reset --hard</li>
+	</ul>
+</ul>
 </details>
 
 ## Unit 2 - XML Layout Design, Activity Lifecycle, SharedPreferences, and RecyclerView Management
