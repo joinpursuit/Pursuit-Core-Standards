@@ -176,10 +176,22 @@ Without further ado:
     <li>Relative widths, media queries, and responsive web design</li>
   </ul>
   <p>Accordingly, we expect students to be able to:</p>
+  <ul>
+    <li>Precisely clone an existing website (e.g. nytimes.com)</li>
+    <li>Implement a design based on mockups/specifications</li>
+    <li>Create their own wireframes and implement a design in-browser</li>
+    <li>Design and implement responsive sites utilizing relative widths, media queries, and other responsive web design techniques</li>
+  </ul>
 </details>
 
 <details>
   <summary>The DOM and Static Sites with JavaScript</summary>
+  <p>We expect students to know how to combine "vanilla" JavaScript with HTML/CSS via the use of the Document Object Model. Students should know about:</p>
+  <ul>
+    <li>The conceptual underpinnings of the DOM, including the notion of a tree with nodes and what that represents</li>
+    <li>Methods to access and manipulate DOM nodes and their corresponding HTML elements</li>
+    <li></li>
+  </ul>
 </details>
 
 <details>
