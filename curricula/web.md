@@ -166,6 +166,16 @@ Without further ado:
 
 <details>
   <summary>CSS and HTML</summary>
+  <p>We expect students to master CSS and HTML, including:</p>
+  <ul>
+    <li>All common HTML element types</li>
+    <li>HTML tagging, including CSS selectors</li>
+    <li>HTML inputs, forms, and form behavior</li>
+    <li>The CSS box model</li>
+    <li>CSS styling and positioning, with a strong emphasis on Flexbox and Grids</li>
+    <li>Relative widths, media queries, and responsive web design</li>
+  </ul>
+  <p>Accordingly, we expect students to be able to:</p>
 </details>
 
 <details>
