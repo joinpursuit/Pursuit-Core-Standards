@@ -174,6 +174,7 @@ Without further ado:
     <li>The CSS box model</li>
     <li>CSS styling and positioning, with a strong emphasis on Flexbox and Grids</li>
     <li>Relative widths, media queries, and responsive web design</li>
+    <li>Semantic HTML and frontend accessibility</li>
   </ul>
   <p>Accordingly, we expect students to be able to:</p>
   <ul>
@@ -190,20 +191,62 @@ Without further ado:
   <ul>
     <li>The conceptual underpinnings of the DOM, including the notion of a tree with nodes and what that represents</li>
     <li>Methods to access and manipulate DOM nodes and their corresponding HTML elements</li>
-    <li></li>
+    <li>The HTML script tag, synchronicity, and the usage of JavaScript on static HTML pages</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Create static sites combining HTML, CSS, and JavaScript</li>
+    <li>Manipulate content and styling on the page by utilizing DOM Events and Event Listeners</li>
   </ul>
 </details>
 
 <details>
   <summary>REST-ful APIs, JSON, and AJAX</summary>
+  <p>Students should have deep knowledge of and familiarity with REST-ful APIs, including:</p>
+  <ul>
+    <li>HTTP and the request-response cycle</li>
+    <li>GET, POST, PATCH, and DELETE requests and the difference between them</li>
+    <li>Utilizing various libraries/services to make AJAX requests to APIs (including fetch, axios, XMLHttpRequest)</li>
+    <li>API routing, wildcards, and formatting appropriate requests</li>
+    <li>Navigating new API documentation to discern how an API might be useful in a project</li>
+    <li>Handling, parsing, and representing data received in JSON format</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Query an API in Postman or the browser to get a desired response</li>
+    <li>Build a frontend application that queries remote APIs to render information to the user</li>
+    <li>Utilize CRUD requests to create, update, or delete information from an API, if possible/desirable</li>
+  </ul>
 </details>
 
 <details>
   <summary>React Basics</summary>
+  <p>Students should be proficient with the basics of React, including:</p>
+  <ul>
+    <li>The concept of a 'single-page application', how React interacts with the DOM, and what's done behind the scenes to render React components in HTML/CSS</li>
+    <li>JSX and component syntax</li>
+    <li>Lifecycle methods (including componentDidMount, componentWillMount, componentWillReceiveProps) and the component lifecycle more generally (what runs when)</li>
+    <li>State, updating state via setState, and passing state via props to child components</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Set up React applications, from scratch and utilizing build tools like create-react-app</li>
+    <li>Render visible HTML inside a react-dom connected element</li>
+    <li>Change/update rendered content based on user input, successful AJAX requests, or other triggers</li>
+    <li>Set an initial state and update it based on information received from the user or other third-party sources</li>
+    <li>Utilize information in state to accomplish tasks for the user, such as fetching from an API or processing and rendering state data in useful ways</li>
+  </ul>
 </details>
 
 <details>
   <summary>React Routing and Architecture</summary>
+  <p>Students are expected to be proficient in advanced React routing, including:</p>
+  <ul>
+    <li>React-router setup in a React project</li>
+    <li>The usage of path versus exact path</li>
+    <li>Nested routing through multiple components in a React project</li>
+    <li>Planning and implementing a sensible structure for a frontend project's routing</li>
+  </ul>
 </details>
 
 <details>
