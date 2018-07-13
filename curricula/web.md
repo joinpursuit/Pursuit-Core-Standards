@@ -305,7 +305,7 @@ Without further ado:
   <p>Accordingly, students should be able to:</p>
   <ul>
     <li>Explain, in detail, what happens when you type 'www.google.com' into a browser and press enter</li>
-    <li>Understand and handle various errors based on specific error codes</li>
+    <li>Understand and handle various errors based on specific HTTP error codes</li>
   </ul>
 </details>
 
@@ -313,16 +313,40 @@ Without further ado:
   <summary>Full Stack Application Architecture</summary>
   <p>We expect students to understand how to set up and structure a full-stack application. This includes an understanding of:</p>
   <ul>
-    <li></li>
+    <li>The difference between frontend and backend applications</li>
+    <li>Servers, ports, and port management</li>
+    <li>Connecting and syncing frontend and backend applications and their corresponding states</li>
+    <li>NPM and module management across multiple NPM based applications</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Plan and execute a full-stack application skeleton with a structure based on specific needs/design principles</li>
   </ul>
 </details>
 
 <details>
   <summary>Node's HTTP module</summary>
+  <p>Students are expected to know about and be able to utilize Node's built-in HTTP module. Students should be able to:</p>
+  <ul>
+    <li>Create an HTTP server on a particular port</li>
+    <li>Process requests via URL parameters, returning responses based on the param</li>
+    <li>Send text, HTML, images, and other file types</li>
+  </ul>
 </details>
 
 <details>
   <summary>Express Syntax</summary>
+  <p>Students are expected to understand the fundamentals of the Express web framework, including:</p>
+  <ul>
+    <li>How to set up an Express application manually and using the express-generator tool</li>
+    <li>How requests are routed through an Express app, and how to send particular response codes and response types</li>
+    <li>The basics of how to set up Express views using a templating language</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Create an Express application that starts via npm start on a particular port</li>
+    <li>Send responses and handle errors through the HTTP request-response cycle</li>
+  </ul>
 </details>
 
 <details>
