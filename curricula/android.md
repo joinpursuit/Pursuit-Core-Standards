@@ -595,7 +595,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>understand that all Activities in a project must be explicitly described in the project's AndroidManifest.xml file</li>
 		<li>be aware of the fact that one Activity should always explicitly described in the project's AndroidManifest.xml file as the project's main/launcher Activity, or the first Activity that loads when a program is started</li>
 		<li>understand that the state of an app is affected by user action (pressing back-press, backgrounding the app, etc.)</li>
-		<li>understatnd that the only lifecycle method explicitely overridden in an android project is "onCreate()", and that a developer must override other lifecycle callback methods as-needed</li>
+		<li>understand that the only lifecycle method explicitely overridden in an android project is "onCreate()", and that a developer must override other lifecycle callback methods as-needed</li>
 		<li>compose and observe debug logs in Logcat fired by the methods onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(), based on user interaction</li>
 	</ul>
 <li>Activities and Corresponding Layouts</li>
@@ -634,7 +634,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 <details>
-<summary>Moving to/from and communication between Activities</summary>
+<summary>Moving to/from and communicating between Activities</summary>
 <ul>
 <li>Intents</li>
 	<ul>
