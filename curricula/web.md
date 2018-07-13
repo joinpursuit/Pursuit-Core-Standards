@@ -235,6 +235,7 @@ Without further ado:
     <li>Change/update rendered content based on user input, successful AJAX requests, or other triggers</li>
     <li>Set an initial state and update it based on information received from the user or other third-party sources</li>
     <li>Utilize information in state to accomplish tasks for the user, such as fetching from an API or processing and rendering state data in useful ways</li>
+    <li>Store a single state and corresponding methods in a parent component and pass down content via props</li>
   </ul>
 </details>
 
@@ -247,24 +248,73 @@ Without further ado:
     <li>Nested routing through multiple components in a React project</li>
     <li>Planning and implementing a sensible structure for a frontend project's routing</li>
   </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Describe the difference between frontend and backend routing</li>
+    <li>Set up a project using react-router that compiles and renders components to users</li>
+    <li>Use routing to render desired components on a page for specific URL extensions</li>
+    <li>Explain the logic behind their component structure, routing and route naming, and links between routes</li>
+  </ul>
 </details>
 
 <details>
   <summary>Redux, Context, and Advanced State Management</summary>
+  <p>Students are expected to be capable of using Redux, Context, or other state management tools to centralize and manage their state. This includes understanding:</p>
+  <ul>
+    <li>The problem of 'prop drilling' in a stateful vanilla React application</li>
+    <li>The concept and appeal of a 'single source of truth'</li>
+    <li>The concept of a centralized, immutable state, updated only via actions</li>
+    <li>How to utilize, separate, and recombine reducers to centralize actions and parts of state</li>
+    <li>How to discern, based on the scope of a project, whether Redux, Context, or vanilla React is most appropriate</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Describe and utilize Redux, including action creators, reducers, containers, and stores</li>
+    <li>Describe the appeal of Context and utilize it to create centralized state on small to medium-sized projects</li>
+    <li>Create React apps using routing, centralized state management, and responsive design to seamlessly integrate and standardize the frontend experience</li>
+  </ul>
 </details>
 
 <details>
-  <summary>Connecting and Deploying React Applications</summary>
+  <summary>Build Tools and Connecting React Applications to Backend Servers</summary>
+  <p>We expect students to know the fundamentals of transpiling and bundling React applications, including:</p>
+  <ul>
+    <li>What bundling tools like Webpack do and why they are important</li>
+    <li>What Babel does and how to configure it for a production application</li>
+    <li>When to use automated build tools, such as create-react-app, and what their purpose is</li>
+    <li>How to utilize build tools while deploying a frontend application</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Create and configure a React project, either from scratch or via the usage of create-react-app</li>
+    <li>Deploy a React project utilizing platforms like Netlify and Heroku</li>
+  </ul>
 </details>
 
 ## Backend Understanding
 
 <details>
   <summary>How the Internet Works</summary>
+  <p>We expect students to have a fulsome understanding of the physical and conceptual structure of the Internet, including:</p>
+  <ul>
+    <li>An awareness of physical infrastructure, including servers and cables</li>
+    <li>DNS routing</li>
+    <li>Servers, HTTP, and the request-response cycle</li>
+    <li>HTTP error codes</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Explain, in detail, what happens when you type 'www.google.com' into a browser and press enter</li>
+    <li>Understand and handle various errors based on specific error codes</li>
+  </ul>
 </details>
 
 <details>
   <summary>Full Stack Application Architecture</summary>
+  <p>We expect students to understand how to set up and structure a full-stack application. This includes an understanding of:</p>
+  <ul>
+    <li></li>
+  </ul>
 </details>
 
 <details>
