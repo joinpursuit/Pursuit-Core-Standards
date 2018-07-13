@@ -623,8 +623,59 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>Widgets in-depth</li>
 	<ul>
 	We expect fellows to know that:
+		<li>all widgets and layouts should be given an ID, if a developer wishes to modify it during runtime, i.e.: android:id="@+id/new_widget_id"</li>
+		<li>Widgets and layouts can be modified at runtime by initializing a variable in the onCreate() method, and assigning it a reference to the widget, i.e.: TextView textView = (TextView) findViewById(R.id.new_widget_id);</li>
 		<li>all views require layout parameters if created dynamically to be displayed, and height and width if using XML - the constant "match_parent" is used to match the size of the outer view, while "wrap_content" is used to adjust to the content size/length (String, image, another view, etc.)</li>
-		<li>TextViews are widgets which are used to display text on the screen, and can accept Strings as parameters at runtime using the setText() method</li>
+		<li>TextViews are widgets which are used to DISPLAY text on the screen, and can accept Strings as parameters at runtime by calling the setText() method</li>
+		<li>EditTexts are widgets which are used to ENTER text on the screen, and can extract text from a user (usually after a button click) by calling .getText().toString() on the EditText instance</li>
+		<li>ImageViews are widgets which are used to display images on the screen, from either the "res/drawable/" folder, or from an internet link using a third-party library</li>
+		<li>Buttons are widgets often used by users to produce a result based on a click - by either calling a method assigned in the "android:onClick" XML attribute, or code within an OnClickListener anonymous class instance declared within a setOnClickListener() method</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Moving to/from and communication between Activities</summary>
+<ul>
+<li>Intents</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>intents are essentially messages passed between components (Activities, Services, Broadcast Receivers, Content Providers)</li>
+		<li>implicit intents are messages sent that can be received by components that are primed to accept them, while explicit intents are received by the components to which are directly addressed</li>
+		<li>Intents are used to move from one Activity to another, explicitly - i.e.: Intent intent = new Intent(MainActivity.this, SecondActivity.class); intent.startActivity()</li>
+	</ul>
+<li>Intent Extras</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>intents can be used to send information/values between Activities, using intent extras</li>
+		<li>Intent Extras are added to intents before they are used to move from one Activity to another, explicitly, using a String key, and a value of the necessary type - i.e.: Intent intent = new Intent(MainActivity.this, SecondActivity.class); intent.putExtra("username", "Sarah"); intent.startActivity()</li>
+		<li>Intent Extras are extracted from sending intents after they are used to move from one Activity to another, explicitly, using a String key, and a get method of the necessary type - i.e.: Intent intent = getIntent(); String name = intent.getStringExtra("username");</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Shared Preferences</summary>
+<ul>
+<li>Storing and Retreiving Persistent Data from Shared Preferences</li>
+	<ul>
+	We expect fellows to be able to:
+		<li>access Shared Preferences data based on a particular context (Application, Activity, etc.), i.e.: SharedPreferences prefs = this.getSharedPreferences("Demo", Context.MODE_PRIVATE);</li>
+		<li>add data to Shared preferences using SharedPreferences.Editor, i.e: SharedPreferences.Editor editor = prefs.edit(); editor.putString("username", "Rachel"); editor.commit();</li>
+		<li>retreive data from Shared Preferences, and include a backup default value in case there is no key already set, i.e.: prefs.getString("username", "default name in case username is null");</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>ScrollView and RecyclerView</summary>
+<ul>
+<li>ScrollView</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
+	</ul>
+<li>RecyclerView</li>
+	<ul>
+	We expect fellows to understand that:
+		<li></li>
 	</ul>
 </ul>
 </details>
