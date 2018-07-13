@@ -8,7 +8,7 @@ This curriculum is developed under the pretense that entering fellows will have 
 
 The Pursuit Android Development Fellowship Technical Mastery facet begins with the fundamentals of the Java programming language (Java 8), and introductory Object-Oriented Programming (OOP) paradigms in Unit 1, in conjunction with POSIX-styled command line version control (Git and Github) and JetBrains IDE development skills (Intellij IDEA and Android Studio, respectively). 
 
-Units 2 through 6 will focus primarily on the design and development of a number of group-based Android Applications, bookended by a Practical assessment.
+Units 2 through 5 will focus primarily on the design and development of a number of group-based Android Applications, bookended by a Practical assessment in Unit 6.
 
 From the start of Unit 7, Android fellows will have built a group project under the crucible of a two-day hackathon challenge, along with a group capstone project culminating in a public presentation, and the completion of a personal portfolio project up until commencement (the end of Unit 10), to round off their academic prospectus. 
 
@@ -510,7 +510,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 <details>
-<summary>Introduction to Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
+<summary>Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
 <ul>
 <li>Call Basic BASH Functions</li>
 	<ul>
@@ -561,13 +561,78 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 
-## Unit 2 - XML Layout Design, Activity Lifecycle, SharedPreferences, and RecyclerView Management
+## Unit 2 - Activity Lifecycle, Widgets, XML Layout Design, SharedPreferences, and RecyclerView Management
+<details>
+<summary>Android Studio Projects</summary>
+<ul>
+<li>Creating Android Studio Projects</li>
+	<ul>
+	We expect fellows to:
+		<li>be familiar with the process of creating "Hello World" apps</li>
+		<li>be familiar with the process of adding an application name, company domain, project location, and package name to a project</li>
+		<li>be familiar with the process of cleaning and rebuilding gradle builds</li>
+		<li>be able to create emulators with various API levels</li>
+	</ul>
+</ul>
+<details>
+<summary>Activity Lifecycle</summary>
+<ul>
+<li>Overriding Lifecycle Callback Methods</li>
+	<ul>
+	We expect fellows to:
+		<li>understand the changes of state within the Android Activity Lifecycle</li>
+		<li>compose and observe debug logs in Logcat fired by the methods onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(), based on user interaction()</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Activities, Layouts, and Widgets</summary>
+<ul>
+<li>Overriding Lifecycle Callback Methods</li>
+	<ul>
+	We expect fellows to:
+		<li>understand that all Activities in a project must be explicitly described in the project's AndroidManifest.xml file</li>
+		<li>be aware of the fact that one Activity should always explicitly described in the project's AndroidManifest.xml file as the project's main/launcher Activity, or the first Activity that loads when a program is started</li>
+		<li>understand that the state of an app is affected by user action (pressing back-press, backgrounding the app, etc.)</li>
+		<li>understatnd that the only lifecycle method explicitely overridden in an android project is "onCreate()", and that a developer must override other lifecycle callback methods as-needed</li>
+		<li>compose and observe debug logs in Logcat fired by the methods onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(), based on user interaction</li>
+	</ul>
+<li>Activities and Corresponding Layouts</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>XML is a markup language for organizing information (AndroidManifest.xml), and layouts/widgets in Android</li>
+		<li>the relationship between Activities, and their corresponding XML Layouts are established when the layout is passed to setContentView() in onCreate()</li>
+		<li>all layouts and widgets extend from the View class</li>
+		<li>all layouts can be found in the project's "res/layout/" folder, and can be added to the "res/layout" folder</li>
+		<li>at compile time, all XML files are converted to one class file at runtime called "R"</li>
+		<li>all layouts and widgets can be declared and implemented dynamically at runtime without XML, but XML cuts down code, and ensures that any issues are caught during compile time, rather than at runtime</li>
+		<li>the section of the XML that describes the version and character encoding is called the prolog, i.e.: &lt;?xml version="1.0" encoding="utf-8"?&gt;</li>
+		<li>following the prolog, an xml file should have a single root element - if it is a layout, then the layout element is the root element, where all additional view elements reside within it</li>
+	</ul>
+<li>Layouts in-depth</li>
+	<ul>
+	We expect fellows to know that:
+		<li>Widgets are the views a user sees on the screen (text in a TextView, button as a Button, editable text as an EditText, etc.), while layouts are ViewGroups which house these views/widgets</li>
+		<li>the way views and layouts are connected is in the form of a tree called a View Hierachy</li>
+		<li>there are many layouts in Android, but the three most important (initially) are LinearLayout, ConstraintLayout, and FrameLayout</li>
+		<li>LinearLayout is a layout that places views in a row, either with a vertical or horizontal orientation - and the orientation attribute is mandatory for LinearLayouts</li>
+		<li>ConstraintLayout is a layout that places views in relation to the limits of other views/viewgroups, and loads quicker than LinearLayouts</li>
+		<li>FrameLayout is a layout where views placed within it are stacked upon each other one-by-one, with the last element added to the layout being the top-most element resting on the stack</li>
+	</ul>
+<li>Widgets in-depth</li>
+	<ul>
+	We expect fellows to know that:
+		<li>all views require layout parameters if created dynamically to be displayed, and height and width if using XML - the constant "match_parent" is used to match the size of the outer view, while "wrap_content" is used to adjust to the content size/length (String, image, another view, etc.)</li>
+		<li>TextViews are widgets which are used to display text on the screen, and can accept Strings as parameters at runtime using the setText() method</li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 3 - APIs, JSON, Retrofit, Picasso, External Libraries, and Threading (Concurrency and Parallelism)
 
 ## Unit 4 - Fragments, Services, Animation, MediaPlayer, and Notifications
 
-## Unit 5 - SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
+## Unit 5 - Testing, SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
 
 ## Unit 6 - Practical Exams
 
