@@ -574,6 +574,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>be able to create emulators with various API levels</li>
 	</ul>
 </ul>
+</details>
 <details>
 <summary>Activity Lifecycle</summary>
 <ul>
