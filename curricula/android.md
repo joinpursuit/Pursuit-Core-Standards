@@ -670,12 +670,24 @@ Parallel to the Android development course, fellows will have a competitive leve
 <li>ScrollView</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>a ScrollView is used to display other views which require more space to be seen on the screen, similar to a website that requires a scrolbar to see content at the bottom of a page</li>
+		<li>a ScrollView cannot have any siblings - it must be the single child of its parent view, and contain all the views which it is expected to scroll</li>
 	</ul>
 <li>RecyclerView</li>
 	<ul>
 	We expect fellows to understand that:
-		<li></li>
+		<li>due to the way Android manages memory, pre-loading views that are currently off-screen with data can use up a lot of resources, especially if there is a lot of data</li>
+		<li>RecyclerViews solve this issue by only loading and "recycling" views when they scroll in and out of view</li>
+		<li>in order to use a RecyclerView, the library must be added as a gradle dependency, i.e.: "implementation 'com.android.support:recyclerview-v7:28.+'"</li>
+		<li>the RecyclerView should be referenced in onCreate()</li>
+		<li>an item view XML file should be created to display the recycled data</li>
+		<li>a composed ViewHolder class extends RecyclerView.ViewHolder should be created, to set the values of each item view</li>
+		<li>a composed Adapter class that extends RecyclerView.Adapter&lt;&gt; should be created, with the viewholder class passed in as a parameterized type into the angle brackets</li>
+		<li>the methods onCreateViewHolder(), onBindViewHolder(), and onItemCount() should be overridden in the adapter class, and populate them accordingly with the list of data passed into the adapter's constructor for each item viewholder</li>
+		<li>an Adaper object should be instantiated in onCreate() by passing it a list of data as a parameter</li>
+		<li>a LayoutManager object should be instantiated in onCreate() based on the way the itemviews should be listed on the screen (LineraLayoutManager for views in a row, GridLayoutManager for views as a grid, etc.)</li>
+		<li>it is required to set the adapter to the recyclerview instance, i.e.: recyclerView.setAdapter(movieAdapter);</li>
+		<li>it is required to set the layout manager to the recyclerview instance, i.e.: recyclerView.setLayoutManager(linearLayoutManager);</li>
 	</ul>
 </ul>
 </details>
