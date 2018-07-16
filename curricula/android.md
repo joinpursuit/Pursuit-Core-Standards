@@ -29,6 +29,11 @@ Parallel to the Android development course, fellows will have a competitive leve
 <details>
 <summary>Introduction To Java: the JVM, variables, and primitive types</summary>
 <ul>
+<li>Bits, Bytes, and the Parts of a Computer</li>
+	<ul>
+	We expect fellows to be aware that:
+		<li></li>
+	</ul>
 <li>The JVM, JRE, and the JDK</li>
 	<ul>
 	We expect fellows to be aware that:
