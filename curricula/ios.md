@@ -47,14 +47,7 @@ Swift provides its own versions of all fundamental C and Objective-C types inclu
 
 <details>
 <summary>Properties</summary>
-<p>Understand how properties associate values with a particular class, structure or enumeration. Create and use stored properties. Create and use computed properties. Know the following: </p>
-<ul>
-<li>Stored Properties</li> 
-<li>Lazy Stored Property</li> 
-<li>Computed Properties: setter and getter</li>
-<li>Read-Only Computed Properties</li>
-<li>Property Observers: willSet, didSet</li>
-<li>Type Properties</li>
+<p>Understand how properties associate values with a particular class, structure or enumeration. Create and use stored properties. Create and use computed properties.</p>
 </details>
 
 <details>
@@ -70,18 +63,15 @@ Swift provides its own versions of all fundamental C and Objective-C types inclu
 
 <details>
 <summary>Strings</summary>
-<p>To be able to use the fundamental data type String, by performing operations like concatenation & character printing, and to be able to understand what Unicode is and how to print and manipulate Unicode Characters.
+<p>To be able to use the fundamental data type, String by performing simple operations like concatenation & character printing, and to be able to understand what Unicode is and how to print and manipulate Unicode Characters
 
-Be able to perform the following operations: 
+Operations: 
 </p>
 <ul> 
 <li>Working with Characters</li>
-<li>Accessing String elements</li>
 <li>Concatenating Strings and Characters</li>
 <li>String Interpolation</li>
 <li>Comparing Strings</li>
-<li>Creating a String from a File or URL</li>
-<li>Writing to a File or URL</li>
 </ul>
 </details>
 
@@ -98,16 +88,10 @@ Be able to perform the following operations:
 <details>
 <summary>Optionals</summary>
 <p>To understand the purpose of optionals in validating if there is a value present or not. Learn how to declare, unwrap, bind and chain optionals. To understand how optionals contribute to the writing of idiomatic Swift.</p>
-<ul>
-<li>nil</li>
-<li>Force Unwrapping</li>
-<li>Optional Binding</li>
-<li>Implicitly Unwrapped Optionals</li>
-</ul>
 </details>
 
 <details>
-<summary>Sets</summary>
+<summary>Set</summary>
 <p>Understand the difference between and Array and Set. Sets stores distinct values of the same type in a collection with no defined ordering. A Set also ensures that an item is unique in the Set.</p>
 </details>
 
@@ -178,7 +162,7 @@ Understand the usefulness of using enumerations to group common types for a grou
 
 <details>
 <summary>App architecture - Model, View, Controller (MVC)</summary>
-<p>Understand how to use MVC pattern to design an iOS app. Understand that MVC is a very common app architecture but there are other options used by the industry, e.g MVVM. MVC is heavily used by Apple.
+<p>Understand how to use MVC pattern to design an iOS app. Understand that MVC is a very common app architecture but there are other options used by the industry, e.g MVVM. MVC is used by Apple.
 
 Components of MVC: 
 </p>
@@ -187,19 +171,6 @@ Components of MVC:
 <li>Model: the data needed by your app</li>
 <li>View: visual aspects of the user interface</li>
 <li>Controller: the messenger (glue) between the views and the models</li>
-</ul>
-</details>
-
-<details>
-<summary>UIKit Overview</summary>
-<p>Understand that UIKit provides the graphical, event-driven user interface for iOS apps</p>
-<ul>
-<li>App development with UIKit</li>
-<li>App Structure</li>
-<li>User Interface: Views, Controls, View Controllers, View Layout, Animations, Haptics, Windows, Screens</li>
-<li>User Interactions: Touches, Press, Gestures, Drag and Drop, Focus Interactions, Peek and Pop, Keyboards and Menus, Accessibility</li>
-<li>Graphics, Drawing and Printing</li>
-<li>Text</li>
 </ul>
 </details>
 
@@ -219,11 +190,7 @@ Components of MVC:
 
 <details>
 <summary>Unit Testing</summary>
-<p>Understand the importance of writing unit tests. Be familiar with XCTest.</p>
-<ul>
-<li>Test cases and Test methods</li>
-<li>Test Assertions</li>
-<li>Asynchronous Tests</li>
+<p>Understand the importance of writing unit tests</p>
 </details>
 
 <details>
@@ -243,46 +210,11 @@ Components of MVC:
 
 <details>
 <summary>DSA LinkedLists</summary>
-<p>Be able to explain a LinkedList data structure and its runtime. Common operations: </p>
-<ul>
-<li>Access an element</li>
-<ul>
-<li>Runtime: O(n)</li>
-</ul>
-<li>Insert an element</li>
-<ul>
-<li>Runtime: O(1)</li>
-</ul>
-<li>Find an element</li>
-<ul>
-<li>Runtime: O(n)</li>
-</ul>
-<li>Delete an element</li>
-<ul>
-<li>Runtime: O(1)</li>
-</ul>
-</details>
-
-<details>
-<summary>Big O Notation</summary>
-<p>Understand how Big O Notation is used to measure performance of an algorithm</p>
-<ul>
-<li>Constant: O(1)</li>
-<li>Linear time: O(n)</li>
-<li>Quadratic time: O(n^2)</li>
-</ul>
-<p>Other time complexities</p>
-<ul>
-<li>Logarithmic: O(log(n))</li>
-<li>Linearithmic: O(n * log(n))</li>
-<li>Exponential: O(2*n)</li>
-<li>Factorial: O(n!)</li>
-</ul>
 </details>
 
 <details>
 <summary>Autolayout</summary>
-<p>Understand the benefits of using Autolayout to layout the app's user interface. Common time complexities: </p>
+<p>Understand the benefits of using Autolayout to layout the app's user interface.</p>
 </details>
 
 <details>
@@ -293,110 +225,37 @@ Components of MVC:
 <details>
 <summary>UI Testing</summary>
 <p>To know how to test an iOS app's user interface for expected behavior</p>
-<ul>
-<li>UI Element Queries</li>
-<li>UI Elements</li>
-<li>Application lifecycle</li>
-<li>Screenshots</li>
-<li>Device simulation</li>
-</ul>
 </details>
 
 <details>
-<summary>UIKit: UITableView</summary>
-<p>Use UITableViews to display the data for your app arranged in rows. Be able to do the following: </p>
-<ul>
-<li>Provide the Table View data</li>
-<li>Customize the Table View behavior</li>
-<li>Configure the Table View</li>
-<li>Creating Table View Cells</li> 
-<li>Accessing Header and Footer Views</li>
-<li>Accessing Cells and Sections</li> 
-<li>Modifying Rows and Sections</li>
-<li>Prefetching data</li>
-</ul>
+<summary>UITableView</summary>
+<p>Use UITableViews to display the data for your app in a list</p>
 </details>
 
 <details>
 <summary>DSA Arrays</summary>
-<p>Know the fundamental use of the Array data structure and its runtime.</p>
-<ul>
-<li>Accessing an Element</li>
-<ul>
-<li>Runtime: O(1)</li>
-</ul>
-<li>Finding an Element</li>
-<ul>
-<li>Runtime: O(n)</li>
-</ul>
-</ul>
-<p>Common Multi-Dimensional Arrays</p>
-<ul>
-<li>Game boards: chess, checkers, bingo, sudoku...</li>
-<li>Maps eg. lat, lon</li>
-<li>Images (describing the x and y position of a point in the image)</li>
-<li>Spreadsheets (uses rows and columns)</li>
-<li>3D Animations</li>
-</ul>
 </details>
 
 <details>
-<summary>UIKit: UITableView and UISearchBar</summary>
-<p>Integrate a UITableView with a UISearchBar to filter data in your app</p>
+<summary>Using UITableView and UISearchBar</summary>
 </details>
 
 <details>
-<summary>UIKit: UI Controls and UIViewController Life Cycle</summary>
-<p>Know the UIViewController Life cycle: </p>
-<ul>
-<li>viewWillAppear</li>
-<li>viewDidLoad</li>
-<li>viewDidAppear</li>
-<li>viewWillDisappear</li>
-<li>viewDidDisappear</li>
-</ul>
-<p>Be familiar with the usage of the following UI Controls</p>
-<ul>
-<li>UIButton</li>
-<li>UIDataPicker</li>
-<li>UIPageControl</li>
-<li>UISegmentedControl</li>
-<li>UISlider</li>
-<li>UIStepper</li>
-<li>UISwitch</li>
-</ul>
+<summary>A look at some UI Controls and View Controller Life Cycle</summary>
 </details>
 
 <details>
 <summary>Navigation</summary>
-<p>Be familiar with the various styles of navigation within an app.</p>
-<ul>
-<li>Hierarchical Navigation e.g Settings and Mail</li>
-<li>Flat Navigation e.g the Music and App Store apps</li>
-<li>Content-Driven or Experience-Driven Navigation e.g. games, books and other immersive apps</li>
-</ul>
-<p>Classes used for Navigation: </p>
-<ul>
-<li>UINavigationController</li>
-<li>UITabBarController</li>
-<li>UIPageViewController</li>
-</ul>
+<p>Be familiar with the various ways to navigate within an app.</p>
 </details>
 
 <details>
 <summary>Generics</summary>
-<p>The importance of using Generics in making your objects more flexible for any type. Understand the problems Generics sort of to solve.</p>
-<ul>
-<li>Generic Functions</li>
-<li>Generic Types</li>
-<li>Extending a Generic Type</li>
-<li>Associated Types</li>
-</ul>
+<p>The importance of using Generics in making your objects more flexible for any data type</p>
 </details>
 
 <details>
 <summary>DSA Stacks</summary>
-<p>Understand the use case and Stack data structure along with the runtime for various operations.</p>
 </details>
 
 
@@ -583,6 +442,14 @@ Components of MVC:
 </details>
 
 <details>
+<summary>Programming View Management II</summary>
+</details>
+
+<details>
+<summary>Persistence overview and best practices</summary>
+</details>
+
+<details>
 <summary>Animations</summary>
 <p>To be able to use Core Animation and UIKit animations to deliver status, feedback, direct manipulation and help users visulaize the results of their actions. Know they types of various ways to animate using the following: </p> 
 <ul>
@@ -642,101 +509,42 @@ Components of MVC:
 
 <details>
 <summary>Core Location</summary>
-<p>Understand how to use Core Location to obtain the geographic location and orientation of a device. Services provided by Core Location: </p>
-<ul>
-<li>Geographic location</li> 
-<li>Altitude</li>
-<li>Orientation</li>
-<li>Position relative to a nearby iBeacon<li>
-</ul> 
 </details>
 
 <details>
 <summary>MapKit</summary>
-<p>Be able to use the MapKit UI to display call out points of interest, and determine placemark information for map coordinates. Understand how to do the following on a Map: </p>
-<ul>
-<li>Manipulating the visible portion of the map</li>
-<li>Configuring the Map's appearance</li>
-<li>Adding overlays to the Map</li>
-<li>Displaying the user's location</li>
-<li>Specify locations on the map using either geographic coordinates or map-specific points</li>
-<li>Place custom content on the map surface using Annotations.</li>
-<li>Use MKMapViewDelegate to receive map-related updates</li>
-</ul>
 </details>
 
 <details>
 <summary>Dependecy Managers - Cocoapods, Catharge, Swift Package Manager</summary>
-<p>Now that we have been doing quite a bit of iOS development using native iOS frameworks let's take a look at using existing third party libraries. Those libraries are ported into our apps using dependency managers such as the popular Cocoapods</p>
+<p>Now that we have been doing quite a bit of development and problem solving using native iOS frameworks let's take a look at existing third party libraries. Those libraries are ported into our apps using dependency managers such as the popular Cocoapods</p>
 </details>
 
 <details>
-<summary>SafariServices</summary>
-<p>Be able to use Safari Services framework to integrate Safari behaviors into your iOS app. Understand how to use the following: </p>
-<ul>
-<li>SFSafariViewController</li>
-<li>ASWebAuthenticationSession</li>
-</ul>
+<summary>SFSafariViewController</summary>
+</details>
+
+<details>
+<summary>Backend as a Service - Firebase, Realm, AWS, Custom RESTful API using the MEN stack</summary>
+</details>
+
+<details>
+<summary>Key-Value Observing / Key-Value Coding</summary>
 </details>
 
 <details>
 <summary>Core Data I</summary>
-<p>Be able to manage object graphs and object lifecycle, including persistence using the built-in Core Data stack you get when creating a new app. Be able to do the following: </p>
-<ul>
-<li>Fetch Requests</li>
-<li>Understand the Core Data Stack</li>
-<ul>
-<li>NSPersistentContainer</li>
-<li>NSManagedObjectContext</li>
-<li>NSPersistenntStoreCoordinator</li>
-<li>NSManagedObjectModel</li>
-</ul>
-<li>Data Migration</li>
-<li>Background Tasks</li>
-</ul> 
+<p>Be able to manage object graphs and object lifecycle, including persistence using the Core Data stack</p>
 </details>
 
 <details>
 <summary>Core Data II</summary>
-<p>Be able to build the Core Data stack from the ground up in an existing app.</p>
-</details>
-
-<details>
-<summary>Backend as a Service</summary>
-<p>Get exposure to Backend as a Service using Firebase</p>
-<ul>
-<li>Be able to create and setup the backend</li>
-<li>Perform CRUD funtions on the backend service and manipulate the app's user interface accordingly</li>
-</ul> 
-<p>Know there are other BaaS providers such as: </p>
-<ul>
-<li>Realm</li>
-<li>AWS</li>
-<li>Creating a custom API using MongoDB, Express and Node</li>
-</ul>
-</details>
-
-<details>
-<summary>Key-Value Observing</summary>
-<p>Be exposed to and able to use KVO to observe for changes on specified properties of other objects. Be able to perform the following: </p>
-<ul>
-<li>Registering for observation</li>
-<li>Notifying observers of changes</li>
-<li>Change notification</li>
-</ul>
+<p>Be able to build the Core Data stack from the ground up.</p>
 </details>
 
 <details>
 <summary>Oauth 2.0</summary>
-<p>Use ASWebAuthenticationSession along with Oauth 2.0 spec to authenticate a user through various third parties such as Spotify, Strava, Facebook, and Meetup. Understand that OAuth 2.0 is the industry-standard protocol for authorization. Know the OAuth 2.0 Core concepts: </p>
-<ul>
-<li>Authorization Code</li>
-<li>Implicit</li>
-<li>Password</li>
-<li>Client Credentials</li> 
-<li>Device Code</li>
-<li>Refresh Token</li>
-</ul>
+<p>Use the Oauth 2.0 spec to authenticate the user through various third parties such as Spotify and Meetup</p>
 </details>
 
 ## Unit 6 - Practical Exams 
