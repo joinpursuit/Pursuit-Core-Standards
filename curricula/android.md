@@ -8,7 +8,7 @@ This curriculum is developed under the pretense that entering fellows will have 
 
 The Pursuit Android Development Fellowship Technical Mastery facet begins with the fundamentals of the Java programming language (Java 8), and introductory Object-Oriented Programming (OOP) paradigms in Unit 1, in conjunction with POSIX-styled command line version control (Git and Github) and JetBrains IDE development skills (Intellij IDEA and Android Studio, respectively). 
 
-Units 2 through 6 will focus primarily on the design and development of a number of group-based Android Applications, bookended by a Practical assessment.
+Units 2 through 5 will focus primarily on the design and development of a number of group-based Android Applications, bookended by a Practical assessment in Unit 6.
 
 From the start of Unit 7, Android fellows will have built a group project under the crucible of a two-day hackathon challenge, along with a group capstone project culminating in a public presentation, and the completion of a personal portfolio project up until commencement (the end of Unit 10), to round off their academic prospectus. 
 
@@ -29,6 +29,11 @@ Parallel to the Android development course, fellows will have a competitive leve
 <details>
 <summary>Introduction To Java: the JVM, variables, and primitive types</summary>
 <ul>
+<li>Bits, Bytes, and the Parts of a Computer</li>
+	<ul>
+	We expect fellows to be aware that:
+		<li></li>
+	</ul>
 <li>The JVM, JRE, and the JDK</li>
 	<ul>
 	We expect fellows to be aware that:
@@ -510,7 +515,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 <details>
-<summary>Introduction to Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
+<summary>Version Control and Basic POSIX command line tools (Git, Grep, Bash, etc)</summary>
 <ul>
 <li>Call Basic BASH Functions</li>
 	<ul>
@@ -561,20 +566,443 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 
-## Unit 2 - XML Layout Design, Activity Lifecycle, SharedPreferences, and RecyclerView Management
+## Unit 2 - Activity Lifecycle, Widgets, XML Layout Design, SharedPreferences, and RecyclerView Management
+<details>
+<summary>Android Studio Projects</summary>
+<ul>
+<li>Creating Android Studio Projects</li>
+	<ul>
+	We expect fellows to:
+		<li>be familiar with the process of creating "Hello World" apps</li>
+		<li>be familiar with the process of adding an application name, company domain, project location, and package name to a project</li>
+		<li>be familiar with the process of cleaning and rebuilding gradle builds</li>
+		<li>be able to create emulators with various API levels</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Activity Lifecycle</summary>
+<ul>
+<li>Overriding Lifecycle Callback Methods</li>
+	<ul>
+	We expect fellows to:
+		<li>understand the changes of state within the Android Activity Lifecycle</li>
+		<li>compose and observe debug logs in Logcat fired by the methods onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(), based on user interaction()</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Activities, Layouts, and Widgets</summary>
+<ul>
+<li>Overriding Lifecycle Callback Methods</li>
+	<ul>
+	We expect fellows to:
+		<li>understand that all Activities in a project must be explicitly described in the project's AndroidManifest.xml file</li>
+		<li>be aware of the fact that one Activity should always explicitly described in the project's AndroidManifest.xml file as the project's main/launcher Activity, or the first Activity that loads when a program is started</li>
+		<li>understand that the state of an app is affected by user action (pressing back-press, backgrounding the app, etc.)</li>
+		<li>understand that the only lifecycle method explicitely overridden in an android project is "onCreate()", and that a developer must override other lifecycle callback methods as-needed</li>
+		<li>compose and observe debug logs in Logcat fired by the methods onCreate(), onStart(), onResume(), onPause(), onStop(), and onDestroy(), based on user interaction</li>
+	</ul>
+<li>Activities and Corresponding Layouts</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>XML is a markup language for organizing information (AndroidManifest.xml), and layouts/widgets in Android</li>
+		<li>the relationship between Activities, and their corresponding XML Layouts are established when the layout is passed to setContentView() in onCreate()</li>
+		<li>all layouts and widgets extend from the View class</li>
+		<li>all layouts can be found in the project's "res/layout/" folder, and can be added to the "res/layout" folder</li>
+		<li>at compile time, all XML files are converted to one class file at runtime called "R"</li>
+		<li>all layouts and widgets can be declared and implemented dynamically at runtime without XML, but XML cuts down code, and ensures that any issues are caught during compile time, rather than at runtime</li>
+		<li>the section of the XML that describes the version and character encoding is called the prolog, i.e.: &lt;?xml version="1.0" encoding="utf-8"?&gt;</li>
+		<li>following the prolog, an xml file should have a single root element - if it is a layout, then the layout element is the root element, where all additional view elements reside within it</li>
+	</ul>
+<li>Layouts in-depth</li>
+	<ul>
+	We expect fellows to know that:
+		<li>Widgets are the views a user sees on the screen (text in a TextView, button as a Button, editable text as an EditText, etc.), while layouts are ViewGroups which house these views/widgets</li>
+		<li>the way views and layouts are connected is in the form of a tree called a View Hierachy</li>
+		<li>there are many layouts in Android, but the three most important (initially) are LinearLayout, ConstraintLayout, and FrameLayout</li>
+		<li>LinearLayout is a layout that places views in a row, either with a vertical or horizontal orientation - and the orientation attribute is mandatory for LinearLayouts</li>
+		<li>ConstraintLayout is a layout that places views in relation to the limits of other views/viewgroups, and loads quicker than LinearLayouts</li>
+		<li>FrameLayout is a layout where views placed within it are stacked upon each other one-by-one, with the last element added to the layout being the top-most element resting on the stack</li>
+	</ul>
+<li>Widgets in-depth</li>
+	<ul>
+	We expect fellows to know that:
+		<li>all widgets and layouts should be given an ID, if a developer wishes to modify it during runtime, i.e.: android:id="@+id/new_widget_id"</li>
+		<li>Widgets and layouts can be modified at runtime by initializing a variable in the onCreate() method, and assigning it a reference to the widget, i.e.: TextView textView = (TextView) findViewById(R.id.new_widget_id);</li>
+		<li>all views require layout parameters if created dynamically to be displayed, and height and width if using XML - the constant "match_parent" is used to match the size of the outer view, while "wrap_content" is used to adjust to the content size/length (String, image, another view, etc.)</li>
+		<li>TextViews are widgets which are used to DISPLAY text on the screen, and can accept Strings as parameters at runtime by calling the setText() method</li>
+		<li>EditTexts are widgets which are used to ENTER text on the screen, and can extract text from a user (usually after a button click) by calling .getText().toString() on the EditText instance</li>
+		<li>ImageViews are widgets which are used to display images on the screen, from either the "res/drawable/" folder, or from an internet link using a third-party library</li>
+		<li>Buttons are widgets often used by users to produce a result based on a click - by either calling a method assigned in the "android:onClick" XML attribute, or code within an OnClickListener anonymous class instance declared within a setOnClickListener() method</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Moving to/from and communicating between Activities</summary>
+<ul>
+<li>Intents</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>intents are essentially messages passed between components (Activities, Services, Broadcast Receivers, Content Providers)</li>
+		<li>implicit intents are messages sent that can be received by components that are primed to accept them, while explicit intents are received by the components to which are directly addressed</li>
+		<li>Intents are used to move from one Activity to another, explicitly - i.e.: Intent intent = new Intent(MainActivity.this, SecondActivity.class); intent.startActivity()</li>
+	</ul>
+<li>Intent Extras</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>intents can be used to send information/values between Activities, using intent extras</li>
+		<li>Intent Extras are added to intents before they are used to move from one Activity to another, explicitly, using a String key, and a value of the necessary type - i.e.: Intent intent = new Intent(MainActivity.this, SecondActivity.class); intent.putExtra("username", "Sarah"); intent.startActivity()</li>
+		<li>Intent Extras are extracted from sending intents after they are used to move from one Activity to another, explicitly, using a String key, and a get method of the necessary type - i.e.: Intent intent = getIntent(); String name = intent.getStringExtra("username");</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Shared Preferences</summary>
+<ul>
+<li>Storing and Retreiving Persistent Data from Shared Preferences</li>
+	<ul>
+	We expect fellows to be able to:
+		<li>access Shared Preferences data based on a particular context (Application, Activity, etc.), i.e.: SharedPreferences prefs = this.getSharedPreferences("Demo", Context.MODE_PRIVATE);</li>
+		<li>add data to Shared preferences using SharedPreferences.Editor, i.e: SharedPreferences.Editor editor = prefs.edit(); editor.putString("username", "Rachel"); editor.commit();</li>
+		<li>retreive data from Shared Preferences, and include a backup default value in case there is no key already set, i.e.: prefs.getString("username", "default name in case username is null");</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>ScrollView and RecyclerView</summary>
+<ul>
+<li>ScrollView</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>a ScrollView is used to display other views which require more space to be seen on the screen, similar to a website that requires a scrolbar to see content at the bottom of a page</li>
+		<li>a ScrollView cannot have any siblings - it must be the single child of its parent view, and contain all the views which it is expected to scroll</li>
+	</ul>
+<li>RecyclerView</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>due to the way Android manages memory, pre-loading views that are currently off-screen with data can use up a lot of resources, especially if there is a lot of data</li>
+		<li>RecyclerViews solve this issue by only loading and "recycling" views when they scroll in and out of view</li>
+		<li>in order to use a RecyclerView, the library must be added as a gradle dependency, i.e.: "implementation 'com.android.support:recyclerview-v7:28.+'"</li>
+		<li>the RecyclerView should be referenced in onCreate()</li>
+		<li>an item view XML file should be created to display the recycled data</li>
+		<li>a composed ViewHolder class extends RecyclerView.ViewHolder should be created, to set the values of each item view</li>
+		<li>a composed Adapter class that extends RecyclerView.Adapter&lt;&gt; should be created, with the viewholder class passed in as a parameterized type into the angle brackets</li>
+		<li>the methods onCreateViewHolder(), onBindViewHolder(), and onItemCount() should be overridden in the adapter class, and populate them accordingly with the list of data passed into the adapter's constructor for each item viewholder</li>
+		<li>an Adaper object should be instantiated in onCreate() by passing it a list of data as a parameter</li>
+		<li>a LayoutManager object should be instantiated in onCreate() based on the way the itemviews should be listed on the screen (LineraLayoutManager for views in a row, GridLayoutManager for views as a grid, etc.)</li>
+		<li>it is required to set the adapter to the recyclerview instance, i.e.: recyclerView.setAdapter(movieAdapter);</li>
+		<li>it is required to set the layout manager to the recyclerview instance, i.e.: recyclerView.setLayoutManager(linearLayoutManager);</li>
+	</ul>
+</ul>
+</details>
 
-## Unit 3 - APIs, JSON, Retrofit, Picasso, External Libraries, and Threading (Concurrency and Parallelism)
+## Unit 3 - External Libraries, APIs, JSON, Retrofit, Picasso, and Threading (Concurrency and Parallelism)
+<details>
+<summary>Application Programming Interfaces (API)</summary>
+<ul>
+<li>Local Application Programming Interfaces (API)</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>in Java, an API is a library of available Java classes, packages and interfaces, i.e.: Java core API, optional Java API, and third-party libraries</li>
+		<li>core API can simply be imported to the class</li>
+		<li>remote API should be added as a Gradle Dependency, and imported to the class</li>
+		<li>locally imported third-party libraries should be added as a module, be added as a Gradle Dependency, and be imported to the class</li>
+	</ul>
+<li>API Endpoints</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>API Endpoints are API's that can be accessed via internet connection and Uniform Resource Locator website address, or URL</li>
+		<li>API endpoints are usually called by making either HTTP GET or POST requests</li>
+		<li>API endpoints might also require an API key, (which should be obfuscated within a codebase), and often passed as a query within a request</li>
+		<li>API endpoint requests usually respond with data in the form of text, XML, Protocol Buffers, or JSON - but more often JSON</li>
+		<li>API endpoints should always be requested off of the main UI thread (using AsyncTasks, or a third-party library like Volley or Retrofit2)</li>
+		<li>in order for an Application to access the internet, internet permissions must first be added to the AndroidManifest.xml file, i.e.: 
+		&lt;uses-permission android:name="android.permission.INTERNET"/&gt;</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>JSON</summary>
+<ul>
+	<li>JavaScript Object Notation</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>JSON objects are essentially data organized into key/value pairs, separated by a colon, where the key name is always wrapped in double quotes</li>
+		<li>JSON strings from files or the internet can be converted into JSON objects</li>
+		<li>JSON objects contain properties with values that can be of types array, object, boolean, number (integer or double), or String</li>
+		<li>when adding to JSON objects, these calls should be wrapped in try/catch blocks, to catch any possible JSONExceptions</li>
+		<li>when getting data from JSON objects, the data acquired should be casted to the expected types of the objects before assigning them to variables</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Retrofit</summary>
+<ul>
+	<li>Builder Pattern</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>the Builder pattern is a way to create objects atomically without having to create countless possible contructors for countless possible parameters of varying types</li>
+		<li>rather than using setter methods after instantiation, the builder pattern allows for setter-style methods during instantiation, resulting in an object with custom preset values without the use of overloaded constructors</li>
+	</ul>
+	<li>Singletons and Static Factory Methods</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Singletons, or objects that can only be created once, can be made using static factory methods</li>
+		<li>static factory methods are methods which return static instances of objects stored within a class's member variables, without allowing access to a public constructor (making a constructor private for use only within the class itself)</li>
+	</ul>
+	<li>Retrofit and Picasso</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Retrofit is a way to connect with JSON API Endpoints and parse JSON in a way that is much easier when compared to other methods such as AsyncTasks or Volley</li>
+		<li>the Retrofit library is open source, and utilizes patterns such as the Builder Pattern, the Factory Pattern, and the Singleton Pattern</li>
+		<li>the Retrofit library uses interfaces to make HTTP GET and POST requests, and data model classes to parse JSON responses</li>
+	</ul>
+	<li>Picasso</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Picasso is a way to convert HTTP URL links of image files into images which can be scaled, cached, and displayed in ImageButtons, ImageViews, and other Layouts</li>
+		<li>the Picasso library is open source, and utilizes patterns such as the Builder Pattern</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Threading</summary>
+<ul>
+	<li>UI Thread and Backgroud Threads</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>Threads are a program's line of execution (in linux, a program and process ary synonymous)</li>
+		<li>every Java program has at least one thread, and in Android applications, that's the Main UI Thread</li>
+		<li>making blocking calls, or calls that take up time and resources to complete (such as database or network calls), can slow down the UI thread, making it appear "janky" - which may eventually lead to an ANR, or "Application Not Responding" event</li>
+		<li>some ways to create background threads include AsyncTasks, Runnables, and Handlers</li>
+	</ul>
+	<li>Concurrency and Parallelism</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>Concurrency is a thread or process management paradigm where mutliple threads are managed to take turns running towards completion within a single processor core (CPU)</li>
+		<li>Parallelism is a thread or process management paradigm where mutliple threads are managed to run at the same time utilising multiple cores or processors (CPU)</li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 4 - Fragments, Services, Animation, MediaPlayer, and Notifications
+<details>
+<summary>Fragments</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
-## Unit 5 - SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
+<details>
+<summary>Services</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
-## Unit 6 - Practical Exams
+<details>
+<summary>Notifications</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Animation</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>MediaPlayer</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+## Unit 5 - Testing, SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
+
+<details>
+<summary>Testing</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>SQLite and SQLiteOpenHelper</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Firebase</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>JetPack</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+## Unit 6 - Practical Assessment
+
+<details>
+<summary>Practical Android Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Android Fundamentals Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Java Fundamentals Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Data Structures and Algorithms Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 7 - Personal Portfolio Projects
 
+<details>
+<summary>Personal Portfolio Projects</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
 ## Unit 8 - Hackathon and Assessment Retakes (as needed)
+
+<details>
+<summary>Hackathon</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Assessment Retakes</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 9 - Capstone Project and Demo Day
 
+<details>
+<summary>Capstone Project</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Demo Day</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
 ## Unit 10 - Job Search, Portfolio Cleanup, and Commencement
+
+<details>
+<summary>Job Search</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Portfolio Cleanup</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Commencement</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
