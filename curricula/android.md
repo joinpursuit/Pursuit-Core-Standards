@@ -692,18 +692,284 @@ Parallel to the Android development course, fellows will have a competitive leve
 </ul>
 </details>
 
-## Unit 3 - APIs, JSON, Retrofit, Picasso, External Libraries, and Threading (Concurrency and Parallelism)
+## Unit 3 - External Libraries, APIs, JSON, Retrofit, Picasso, and Threading (Concurrency and Parallelism)
+<details>
+<summary>Application Programming Interfaces (API)</summary>
+<ul>
+<li>Local Application Programming Interfaces (API)</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>in Java, an API is a library of available Java classes, packages and interfaces, i.e.: Java core API, optional Java API, and third-party libraries</li>
+		<li>core API can simply be imported to the class</li>
+		<li>remote API should be added as a Gradle Dependency, and imported to the class</li>
+		<li>locally imported third-party libraries should be added as a module, be added as a Gradle Dependency, and be imported to the class</li>
+	</ul>
+<li>API Endpoints</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>API Endpoints are API's that can be accessed via internet connection and Uniform Resource Locator website address, or URL</li>
+		<li>API endpoints are usually called by making either HTTP GET or POST requests</li>
+		<li>API endpoints might also require an API key, (which should be obfuscated within a codebase), and often passed as a query within a request</li>
+		<li>API endpoint requests usually respond with data in the form of text, XML, Protocol Buffers, or JSON - but more often JSON</li>
+		<li>API endpoints should always be requested off of the main UI thread (using AsyncTasks, or a third-party library like Volley or Retrofit2)</li>
+		<li>in order for an Application to access the internet, internet permissions must first be added to the AndroidManifest.xml file, i.e.: 
+		&lt;uses-permission android:name="android.permission.INTERNET"/&gt;</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>JSON</summary>
+<ul>
+	<li>JavaScript Object Notation</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>JSON objects are essentially data organized into key/value pairs, separated by a colon, where the key name is always wrapped in double quotes</li>
+		<li>JSON strings from files or the internet can be converted into JSON objects</li>
+		<li>JSON objects contain properties with values that can be of types array, object, boolean, number (integer or double), or String</li>
+		<li>when adding to JSON objects, these calls should be wrapped in try/catch blocks, to catch any possible JSONExceptions</li>
+		<li>when getting data from JSON objects, the data acquired should be casted to the expected types of the objects before assigning them to variables</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Retrofit</summary>
+<ul>
+	<li>Builder Pattern</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>the Builder pattern is a way to create objects atomically without having to create countless possible contructors for countless possible parameters of varying types</li>
+		<li>rather than using setter methods after instantiation, the builder pattern allows for setter-style methods during instantiation, resulting in an object with custom preset values without the use of overloaded constructors</li>
+	</ul>
+	<li>Singletons and Static Factory Methods</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Singletons, or objects that can only be created once, can be made using static factory methods</li>
+		<li>static factory methods are methods which return static instances of objects stored within a class's member variables, without allowing access to a public constructor (making a constructor private for use only within the class itself)</li>
+	</ul>
+	<li>Retrofit</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Retrofit is a way to connect with JSON API Endpoints and parse JSON in a way that is much easier when compared to other methods such as AsyncTasks or Volley</li>
+		<li>the Retrofit library is open source, and utilizes patterns such as the Builder Pattern, the Factory Pattern, and the Singleton Pattern</li>
+		<li>the Retrofit library uses interfaces to make HTTP GET and POST requests, and data model classes to parse JSON responses</li>
+	</ul>
+	<li>Picasso</li>
+	<ul>
+	We expect fellows to be aware of the fact that:
+		<li>Picasso is a way to convert HTTP URL links of image files into images which can be scaled, cached, and displayed in ImageButtons, ImageViews, and other Layouts</li>
+		<li>the Picasso library is open source, and utilizes patterns such as the Builder Pattern</li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Threading</summary>
+<ul>
+	<li>UI Thread and Backgroud Threads</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>Threads are a program's line of execution (in linux, a program and process ary synonymous)</li>
+		<li>every Java program has at least one thread, and in Android applications, that's the Main UI Thread</li>
+		<li>making blocking calls, or calls that take up time and resources to complete (such as database or network calls), can slow down the UI thread, making it appear "janky" - which may eventually lead to an ANR, or "Application Not Responding" event</li>
+		<li>some ways to create background threads include AsyncTasks, Runnables, and Handlers</li>
+	</ul>
+	<li>Concurrency and Parallelism</li>
+	<ul>
+	We expect fellows to understand that:
+		<li>Concurrency is a thread or process management paradigm where mutliple threads are managed to take turns running towards completion within a single processor core (CPU)</li>
+		<li>Parallelism is a thread or process management paradigm where mutliple threads are managed to run at the same time utilising multiple cores or processors (CPU)</li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 4 - Fragments, Services, Animation, MediaPlayer, and Notifications
+<details>
+<summary>Fragments</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Services</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Notifications</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Animation</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>MediaPlayer</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 5 - Testing, SQLiteOpenHelper, Firebase, and JetPack (Architecture Components)
 
-## Unit 6 - Practical Exams
+<details>
+<summary>Testing</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>SQLite and SQLiteOpenHelper</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Firebase</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>JetPack</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+## Unit 6 - Practical Assessment
+
+<details>
+<summary>Practical Android Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Android Fundamentals Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Java Fundamentals Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Data Structures and Algorithms Assessment</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 7 - Personal Portfolio Projects
 
+<details>
+<summary>Personal Portfolio Projects</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
 ## Unit 8 - Hackathon and Assessment Retakes (as needed)
 
+<details>
+<summary>Hackathon</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Assessment Retakes</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
 ## Unit 9 - Capstone Project and Demo Day
+
+<details>
+<summary>Capstone Project</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+
+<details>
+<summary>Demo Day</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
 
 ## Unit 10 - Job Search, Portfolio Cleanup, and Commencement
