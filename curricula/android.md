@@ -746,7 +746,7 @@ Parallel to the Android development course, fellows will have a competitive leve
 		<li>Singletons, or objects that can only be created once, can be made using static factory methods</li>
 		<li>static factory methods are methods which return static instances of objects stored within a class's member variables, without allowing access to a public constructor (making a constructor private for use only within the class itself)</li>
 	</ul>
-	<li>Retrofit</li>
+	<li>Retrofit and Picasso</li>
 	<ul>
 	We expect fellows to be aware of the fact that:
 		<li>Retrofit is a way to connect with JSON API Endpoints and parse JSON in a way that is much easier when compared to other methods such as AsyncTasks or Volley</li>
@@ -973,3 +973,31 @@ Parallel to the Android development course, fellows will have a competitive leve
 </details>
 
 ## Unit 10 - Job Search, Portfolio Cleanup, and Commencement
+
+<details>
+<summary>Job Search</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Portfolio Cleanup</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
+<details>
+<summary>Commencement</summary>
+<ul>
+	<li></li>
+	<ul>
+		<li></li>
+	</ul>
+</ul>
+</details>
