@@ -253,13 +253,14 @@ Components of MVC:
 <ul>
 <li>Runtime: O(1)</li>
 </ul>
-<li>Find an element</li>
+<li>Search for an element</li>
 <ul>
 <li>Runtime: O(n)</li>
 </ul>
 <li>Delete an element</li>
 <ul>
 <li>Runtime: O(1)</li>
+</ul>
 </ul>
 </details>
 
@@ -321,11 +322,19 @@ Components of MVC:
 <summary>DSA Arrays</summary>
 <p>Know the fundamental use of the Array data structure and its runtime.</p>
 <ul>
-<li>Accessing an Element</li>
+<li>Access an element</li>
 <ul>
 <li>Runtime: O(1)</li>
 </ul>
-<li>Finding an Element</li>
+<li>Insert an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Search for an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Delete an element</li>
 <ul>
 <li>Runtime: O(n)</li>
 </ul>
@@ -397,6 +406,24 @@ Components of MVC:
 <details>
 <summary>DSA Stacks</summary>
 <p>Understand the use case and Stack data structure along with the runtime for various operations.</p>
+<ul>
+<li>Access an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Insert an element</li>
+<ul>
+<li>Runtime: O(1)</li>
+</ul>
+<li>Search for an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Delete an element</li>
+<ul>
+<li>Runtime: O(1)</li>
+</ul>
+</ul>
 </details>
 
 
@@ -429,6 +456,26 @@ Components of MVC:
 
 <details>
 <summary>DSA Queues</summary>
+<p>Understand the use cases and the Queue data structure.</p>
+<p>Performance: </p>
+<ul>
+<li>Access an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Insert an element</li>
+<ul>
+<li>Runtime: O(1)</li>
+</ul>
+<li>Search for an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Delete an element</li>
+<ul>
+<li>Runtime: O(1)</li>
+</ul>
+</ul>
 </details>
 
 <details>
@@ -446,7 +493,27 @@ Components of MVC:
 </details>
 
 <details>
-<summary>DSA Hashmaps</summary>
+<summary>DSA Hashmaps / HashTable</summary>
+<p>Understand the use cases of a HashMap and its runtime.</p>
+<p>Performance: </p>
+<ul>
+<li>Access an element</li>
+<ul>
+<li>n/a</li>
+</ul>
+<li>Insert an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Search for an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+<li>Delete an element</li>
+<ul>
+<li>Runtime: O(n)</li>
+</ul>
+</ul>
 </details>
 
 <details>
@@ -465,11 +532,7 @@ Components of MVC:
 <li>Run Loop</li>
 <li>Semaphore</li>
 <li>Task</li>
-</details>
-
-<details>
-<summary>NetworkHelper - (a wrapper around URLSession)</summary>
-</details>
+</details> 
 
 <details>
 <summary>API keys, Auth, URLRequest</summary>
@@ -478,7 +541,7 @@ Components of MVC:
 
 <details>
 <summary>POST request</summary>
-<p>Know how to package the necessary components of the POST request and handle with URLSession</p> 
+<p>Be able to use URLRequest and URLSession to make a POST request to a Web API</p> 
 </details>
 
 
@@ -509,6 +572,11 @@ Components of MVC:
 <details>
 <summary>DSA Recursion</summary>
 <p>Understand how a function can call itself and deliver powerful solutions in problem solving</p>
+<p>Be familiar with the fundamentals of a recursive function: </p>
+<ul>
+<li>A recursive call</li>
+<li>A base case</li>
+</ul> 
 </details>
 
 <details>
@@ -550,10 +618,30 @@ Components of MVC:
 
 <details>
 <summary>DSA Sorting</summary>
+<p>Know the various array sorting algorithms and their runtimes</p>
+<ul> 
+<li>Insertion Sort</li>
+<ul>
+<li>Runtime: O(n ^ 2)</li>
+</ul>
+<li>Bubble Sort</li>
+<ul>
+<li>Runtime: O(n ^ 2)</li>
+</ul>
+<li>Merge Sort</li>
+<ul>
+<li>Runtime: O(n log(n))</li>
+</ul>
+<li>Quicksort</li>
+<ul>
+<li>Runtime: O(n ^ 2)</li>
+</ul>
+</ul>
 </details>
 
 <details>
 <summary>UIImagePickerController</summary>
+<p>Be able to use the UIImagePickerController in order to take pictures, recording movies, and choosing items from the user's media library.</p>
 </details>
 
 <details>
@@ -579,10 +667,6 @@ Components of MVC:
 </details>
 
 <details>
-<summary>DSA Sorting II</summary>
-</details>
-
-<details>
 <summary>Animations</summary>
 <p>To be able to use Core Animation and UIKit animations to deliver status, feedback, direct manipulation and help users visulaize the results of their actions. Know they types of various ways to animate using the following: </p> 
 <ul>
@@ -594,6 +678,28 @@ Components of MVC:
 
 <details>
 <summary>DSA Trees</summary>
+<p>Know and understand the various tree data structures and their runtimes.</p>
+<p>Tress: </p>
+<ul>
+<li>Binary Tree</p>
+<li>Full Binary Tree</p>
+<li>Complete Binary Tree</p>
+<li>Balanced Binary Tree</p>
+<li>Degenerate Tree</li>
+<li>Binary Search Tree</li>
+<li>Min Heap</li>
+<li>Max Heap</li>
+</ul>
+<p>Know the various tree traversals</p> 
+<ul>
+<li>Breadth First Search</li>
+<li>Depth First Search</li>
+</ul>
+<p>Binary Search Tree runtimes: </p>
+<ul>
+<li>Average runtime: O(log(n))</li>
+<li>Worst runtime: O(n)</li>
+</ul>
 </details>
 
 ## Unit 5 - Core Data, Backend as a Service Providers (e.g Realm, Firebase, AWS) 
@@ -638,6 +744,11 @@ Components of MVC:
 
 <details>
 <summary>DSA Graphs</summary>
+<p>Know the various types of Graphs</p>
+<ul>
+<li>Directed</li>
+<li>Undirected</li>
+</ul>
 </details>
 
 <details>
