@@ -122,18 +122,6 @@ Be able to perform the following operations:
 </details>
 
 <details>
-<summary>Overview of Foundation</summary>
-<p>Understand the base layer of Foundation and its use in the functionality of an app. Topics overview: </p>
-<ul> 
-<li>Fundamentals - Numbers, Data, and Basic Values. Collections, Dates and Times etc.</li> 
-<li>App Support - Task Management, Resources, Notifications, Errors etc</li>
-<li>Files and Data Persistence - File Systme, Archives and Serialization, Preferences, etc </li> 
-<li>Netowrking - URL Loading System and Bonjour</li>
-<li>Low-Level Utilities - XPC, Object runtime, Processes and Threads, Streams, Sockets and Ports </li>
-</ul>
-</details>
-
-<details>
 <summary>Closures</summary>
 <p>To understand the purpose of using closures. Recognize that a function is a type of closure. Understand closure syntax. Solve problems by using functions that take a closure as an argument. Understand that closures can capture and store references to any constants and variables from the context in which they are defined.</p>
 </details>
@@ -161,6 +149,12 @@ Understand the usefulness of using enumerations to group common types for a grou
 <details>
 <summary>Initialization</summary>
 <p>Understand the process the initialization does in preparing an instance of a class, structure or enumeration for use.</p>
+<ul>
+<li>Customizing Initialization</li>
+<li>Default Initializers</li>
+<li>Class Inheritance and Initialization</li>
+<li>Required Initializers</li>
+</ul>
 </details>
 
 ## Unit 2 - MVC Architecture, View Life Cycle
@@ -218,15 +212,6 @@ Components of MVC:
 </details>
 
 <details>
-<summary>Unit Testing</summary>
-<p>Understand the importance of writing unit tests. Be familiar with XCTest.</p>
-<ul>
-<li>Test cases and Test methods</li>
-<li>Test Assertions</li>
-<li>Asynchronous Tests</li>
-</details>
-
-<details>
 <summary>Protocols and Introduction to Delegation</summary>
 <p>Introduction to the Protocol and the Delegation pattern in iOS. Use built in iOS Controls to explore Delegation.</p>
 </details>
@@ -234,11 +219,6 @@ Components of MVC:
 <details>
 <summary>Delegation using UITextField</summary>
 <p>Understand how to implement conformance to a Delegate</p>
-</details>
-
-<details>
-<summary>Protocol Oriented Programming</summary>
-<p>Understand the difference between Object-Oriented Programming and Protocol Oriented Programming</p>
 </details>
 
 <details>
@@ -449,9 +429,17 @@ Components of MVC:
 <summary>Parsing JSON</summary>
 <p>JSON is the popular format in which response data is retrieved from web request. Fellows will be exposed to the JSON format and perform various HTTP request to get back JSON data. </p>
 <ul>
-<li>Know how to use JSONSerialization to parse JSON data through type casting</li>
-<li>Use the more modern JSONDecoder / JSONEncoder along with Codable to parse JSON data</li>
+<li>Use JSONDecoder / JSONEncoder along with Codable to parse JSON data</li>
 </ul>
+</details>
+
+<details>
+<summary>Unit Testing</summary>
+<p>Understand the importance of writing unit tests. Be familiar with XCTest.</p>
+<ul>
+<li>Test cases and Test methods</li>
+<li>Test Assertions</li>
+<li>Asynchronous Tests</li>
 </details>
 
 <details>
@@ -553,23 +541,6 @@ Components of MVC:
 </details>
 
 <details>
-<summary>NSKeyedArchiver, JSONSerialization</summary>
-<p>Be able to persist data using NSKeyedArchiver and retrieve using NSKeyedUnarchiver. Parse JSON using JSONSerialization and type casting</p> 
-</details>
-
-<details>
-<summary>Codable, JSONDecoder</summary>
-<p>Using Codable to parse JSON data. The fellow should be familiar with the following classes:</p>
-<ul>
-<li>Codable</li>
-<li>Encoder</li>
-<li>Decoder</li>
-<li>JSONDecoder</li>
-<li>JSONEncoder</li>
-</ul> 
-</details>
-
-<details>
 <summary>DSA Recursion</summary>
 <p>Understand how a function can call itself and deliver powerful solutions in problem solving</p>
 <p>Be familiar with the fundamentals of a recursive function: </p>
@@ -586,7 +557,7 @@ Components of MVC:
 
 <details>
 <summary>File Manager</summary>
-<p>Understand how to use FileManager and its role as the gateway to accessing the contents fo the file system. Know how to perfrom the following tasks using the FileManager:</p>
+<p>Understand how to use FileManager and its role as the gateway to accessing the contents fo the file system. Know how to perform the following tasks using the FileManager:</p>
 <ul>
 <li>Accessing user directories</li>
 <li>Location system directories, e.g the documents directory to save app data</li>
@@ -668,12 +639,11 @@ Components of MVC:
 
 <details>
 <summary>Animations</summary>
-<p>To be able to use Core Animation and UIKit animations to deliver status, feedback, direct manipulation and help users visulaize the results of their actions. Know they types of various ways to animate using the following: </p> 
+<p>To be able to use animations to deliver status, feedback, direct manipulation and help users visulaize the results of their actions. Know content animations: </p> 
 <ul>
-<li>Core Animation</li> 
-<li>UIKit animiate(withDuration)</li>
-<li>UIKit Dynamics</li>
-</ul> 
+<li>Property-based animations: create animations by changing the properties of a view</li>
+<li>View Controller Transitions: define custom transitions from one view controller to another</li>
+</ul>
 </details>
 
 <details>
@@ -728,8 +698,8 @@ Components of MVC:
 </details>
 
 <details>
-<summary>Notifications - Local and Remote</summary>
-<p>Be able to use push notifications to the user's device from a server, or generate them locally from the app.</p>
+<summary>Local Notifications</summary>
+<p>Use local notifications to get the user's attention. You can display an alert, play a sound, or badge your app's icon.</p>
 </details>
 
 <details>
@@ -791,25 +761,18 @@ Components of MVC:
 </details>
 
 <details>
-<summary>Core Data I</summary>
-<p>Be able to manage object graphs and object lifecycle, including persistence using the built-in Core Data stack you get when creating a new app. Be able to do the following: </p>
+<summary>Core Data</summary>
+<p>Be able to manage object graphs and object lifecycle, including persistence using the built-in Core Data stack you get when creating a new app. Be able to do and use the following: </p>
 <ul>
-<li>Fetch Requests</li>
-<li>Understand the Core Data Stack</li>
+<li>Fetch Requests using NSFetchedResultsController</li>
+<li><b>Understand the Core Data Stack</b></li>
 <ul>
 <li>NSPersistentContainer</li>
 <li>NSManagedObjectContext</li>
 <li>NSPersistenntStoreCoordinator</li>
 <li>NSManagedObjectModel</li>
 </ul>
-<li>Data Migration</li>
-<li>Background Tasks</li>
-</ul> 
-</details>
-
-<details>
-<summary>Core Data II</summary>
-<p>Be able to build the Core Data stack from the ground up in an existing app.</p>
+</ul>
 </details>
 
 <details>
@@ -838,16 +801,8 @@ Components of MVC:
 </details>
 
 <details>
-<summary>Oauth 2.0</summary>
-<p>Use ASWebAuthenticationSession along with Oauth 2.0 spec to authenticate a user through various third parties such as Spotify, Strava, Facebook, and Meetup. Understand that OAuth 2.0 is the industry-standard protocol for authorization. Know the OAuth 2.0 Core concepts: </p>
-<ul>
-<li>Authorization Code</li>
-<li>Implicit</li>
-<li>Password</li>
-<li>Client Credentials</li> 
-<li>Device Code</li>
-<li>Refresh Token</li>
-</ul>
+<summary>Protocol Oriented Programming</summary>
+<p>Understand the difference between Object-Oriented Programming and Protocol Oriented Programming</p>
 </details>
 
 ## Unit 6 - Practical Exams 
@@ -859,6 +814,7 @@ Components of MVC:
 ## Unit 9 - Capstone
 
 ## Unit 10 - Job Search / Commencement
+
 
 
 
