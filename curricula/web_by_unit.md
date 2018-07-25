@@ -265,3 +265,129 @@
     <li>Deploy a React project utilizing platforms like Netlify and Heroku</li>
   </ul>
 </details>
+
+## Unit 5: Express, SQL, and Full-Stack Applications
+
+<details>
+  <summary>How the Internet Works</summary>
+  <p>We expect students to have a fulsome understanding of the physical and conceptual structure of the Internet, including:</p>
+  <ul>
+    <li>An awareness of physical infrastructure, including servers and cables</li>
+    <li>DNS routing</li>
+    <li>Servers, HTTP, and the request-response cycle</li>
+    <li>HTTP error codes</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Explain, in detail, what happens when you type 'www.google.com' into a browser and press enter</li>
+    <li>Understand and handle various errors based on specific HTTP error codes</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Full Stack Application Architecture</summary>
+  <p>We expect students to understand how to set up and structure a full-stack application. This includes an understanding of:</p>
+  <ul>
+    <li>The difference between frontend and backend applications</li>
+    <li>Servers, ports, and port management</li>
+    <li>Connecting and syncing frontend and backend applications and their corresponding states</li>
+    <li>NPM and module management across multiple NPM based applications</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Plan and execute a full-stack application skeleton with a structure based on specific needs/design principles</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Express Syntax</summary>
+  <p>Students are expected to understand the fundamentals of the Express web framework, including:</p>
+  <ul>
+    <li>How to set up an Express application manually and using the express-generator tool</li>
+    <li>How requests are routed through an Express app, and how to send particular response codes and response types</li>
+    <li>The basics of how to set up Express views using a templating language</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Create an Express application that starts via npm start on any port</li>
+    <li>Send responses and handle errors through the HTTP request-response cycle</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Routing, Middleware, and Error Handling</summary>
+  <p>Students are expected to understand how requests are routed in Express, including:</p>
+  <ul>
+    <li>Express routing and callback functions connected to routes to send specific responses</li>
+    <li>File structuring, nested routing, and the usage of the 'next' keyword to escape undesirable responses</li>
+    <li>The purpose and application of Express middleware, including parsers, sockets/streams, and user authenticators</li>
+    <li>Error handling in Express, both the philosophy of descriptive HTTP errors and their application</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Set up middleware in an Express application to produce desired outcomes for particular requests from the frontend</li>
+    <li>Route specific requests from the frontend to functions that produce intended responses as required by an app's needs</li>
+    <li>Throw descriptive errors and utilize the 'next' keyword to route them efficiently to particular responses</li>
+  </ul>
+</details>
+
+<details>
+  <summary>SQL Syntax</summary>
+  <p>Students are expected to have an advanced understanding of SQL syntax, including:</p>
+  <ul>
+    <li>All basic SQL verbs, including SELECT, UPDATE, CREATE, DROP, JOIN, and INSERT</li>
+    <li>The usage of WHERE clauses, as well as aggregate functions, including SUM and COUNT</li>
+    <li>Data typing in SQL, including all basic types, plus NULL</li>
+    <li>Advanced SQL query syntax, including the effective usage/synthesis of JOIN, SELECT within SELECT, and aggregate functions</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>SELECT any columns, from any tables, in any order from a SQL database</li>
+    <li>SELECT particular rows based on a given set of conditions</li>
+    <li>INSERT, UPDATE, and DROP rows from tables based on specific conditions</li>
+    <li>Attain numerical information about tables using aggregate functions (e.g. not iterating)</li>
+  </ul>
+</details>
+
+<details>
+  <summary>SQL Database Architecture</summary>
+  <p>Students are expected to understand how to structure a SQL database based on the needs of their application. This includes:</p>
+  <ul>
+    <li>How to create an .sql file with complete table structure, database-level validations, and seed data</li>
+    <li>How to determine whether information should be a column or a separate table, based on access, convenience, and architectural best practice</li>
+    <li>What a join table is and how to utilize it to create associations between many-to-many related tables</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Design, structure, and seed a database for a full-stack CRUD application</li>
+    <li>Justify the structure of a database they designed to an interviewer</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Postgres and pg-promise</summary>
+  <p>Students are expected to understand Postgres and how to integrate Postgres with an Express server. This includes:</p>
+  <ul>
+    <li>An awareness of what Postgres is and how it's different from similar systems (e.g. MySQL)</li>
+    <li>An understanding of the Node package pg-promise and how to utilize it to make SQL requests in promisified ES6 JavaScript</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Set up an Express application that utilizes Postgres and pg-promise to create/extract/update/delete information from a Postgres database, process it as an HTTP response object, and send it to the frontend</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Backend-Frontend Integration and Deployment</summary>
+  <p>Students are expected to understand how to integrate and deploy a full-stack application, including separate SQL, Express, and React elements. This includes:</p>
+  <ul>
+    <li>Setting up proxies for AJAX requests made from the frontend</li>
+    <li>Processing requests in Express to ensure that the user consistently sees the React frontend in a production build</li>
+    <li>Hosting a full-stack application on Heroku, including a Postgres database, setting up environment variables for the Heroku database URL</li>
+    <li>Utilizing tools such as AWS S3 to upload/host media, such as images, audio, and video</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Set up, launch, and maintain a full-featured full-stack application on Heroku, utilizing auxiliary services (such as S3) when necessary</li>
+  </ul>
+</details>
