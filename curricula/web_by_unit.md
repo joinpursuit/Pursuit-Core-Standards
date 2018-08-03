@@ -105,7 +105,7 @@
   </ul>
 </details>
 
-## Unit 2: HTML/CSS and the DOM
+## Unit 2: HTML/CSS and the DOM with Node
 
 <details>
   <summary>CSS and HTML</summary>
