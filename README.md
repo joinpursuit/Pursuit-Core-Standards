@@ -1,4 +1,4 @@
-# C4Q - Access Code
+# Pursuit Core
 ## Curriculum Standards
 
 Curricula:
