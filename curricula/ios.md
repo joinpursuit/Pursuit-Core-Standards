@@ -800,20 +800,6 @@ Components of MVC:
 </ul>
 </details>
 
-<details>
-<summary>Protocol Oriented Programming</summary>
-<p>Understand the difference between Object-Oriented Programming and Protocol Oriented Programming</p>
-</details>
-
-## Unit 6 - Practical Exams 
-
-## Unit 7 - Passion Portfolio Project 
-
-## Unit 8 - Hackathon
-
-## Unit 9 - Capstone
-
-## Unit 10 - Job Search / Commencement
 
 
 
