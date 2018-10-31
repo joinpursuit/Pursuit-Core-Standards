@@ -1,4 +1,4 @@
-# C4Q - Access Code
+# Pursuit Core 
 ## Full Stack Web Development Curriculum
 
 ## Unit 1: JavaScript Basics
