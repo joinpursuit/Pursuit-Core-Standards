@@ -10,6 +10,7 @@ This curriculum standard assumes no type of programming background from the indi
 <details>
 <summary>Short history on iOS</summary>
 <p>In this course we will be building iOS apps using the Swift programming language. Prior to Swift being introduced by Apple in 2014, Objective-C was the primary language for writing macOS and iOS apps.</p>
+<p>We expect fellows to know and be able to discuss:</p>
 <ul>
 <li>Brief history about Apple</li>
 <li>Brief history about Next</li>
