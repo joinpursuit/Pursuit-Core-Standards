@@ -171,102 +171,7 @@
   </ul>
 </details>
 
-## Unit 3: React Basics
-
-<details>
-  <summary>React Basics</summary>
-  <p>Fellows should be proficient with the basics of React, including:</p>
-  <ul>
-    <li>The concept of a 'single-page application', how React interacts with the DOM, and what's done behind the scenes to render React components in HTML/CSS</li>
-    <li>JSX and component syntax</li>
-    <li>Lifecycle methods (including componentDidMount, componentWillMount, componentWillReceiveProps) and the component lifecycle more generally (what runs when)</li>
-    <li>State, updating state via setState, and passing state via props to child components</li>
-  </ul>
-  <p>Accordingly, fellows should be able to:</p>
-  <ul>
-    <li>Set up React applications, from scratch and utilizing build tools like create-react-app</li>
-    <li>Render visible HTML inside a react-dom connected element</li>
-    <li>Change/update rendered content based on user input, successful AJAX requests, or other triggers</li>
-    <li>Set an initial state and update it based on information received from the user or other third-party sources</li>
-    <li>Utilize information in state to accomplish tasks for the user, such as fetching from an API or processing and rendering state data in useful ways</li>
-    <li>Store a single state and corresponding methods in a parent component and pass down content via props</li>
-  </ul>
-</details>
-
-<details>
-  <summary>REST-ful APIs, JSON, and AJAX</summary>
-  <p>Fellows should have deep knowledge of and familiarity with REST-ful APIs, including:</p>
-  <ul>
-    <li>HTTP and the request-response cycle</li>
-    <li>GET, POST, PATCH, and DELETE requests and the difference between them</li>
-    <li>Utilizing various libraries/services to make AJAX requests to APIs (including fetch, axios, XMLHttpRequest)</li>
-    <li>API routing, wildcards, and formatting appropriate requests</li>
-    <li>Navigating new API documentation to discern how an API might be useful in a project</li>
-    <li>Handling, parsing, and representing data received in JSON format</li>
-  </ul>
-  <p>Accordingly, fellows should be able to:</p>
-  <ul>
-    <li>Query an API in Postman or the browser to get a desired response</li>
-    <li>Build a frontend application that queries remote APIs to render information to the user</li>
-    <li>Utilize CRUD requests to create, update, or delete information from an API, if possible/desirable</li>
-  </ul>
-</details>
-
-## Unit 4: Advanced React and State Management
-
-<details>
-  <summary>React Routing and Architecture</summary>
-  <p>Fellows are expected to be proficient in advanced React routing, including:</p>
-  <ul>
-    <li>React-router setup in a React project</li>
-    <li>The usage of path versus exact path</li>
-    <li>Nested routing through multiple components in a React project</li>
-    <li>Planning and implementing a sensible structure for a frontend project's routing</li>
-  </ul>
-  <p>Accordingly, fellows should be able to:</p>
-  <ul>
-    <li>Describe the difference between frontend and backend routing</li>
-    <li>Set up a project using react-router that compiles and renders components to users</li>
-    <li>Use routing to render desired components on a page for specific URL extensions</li>
-    <li>Explain the logic behind their component structure, routing and route naming, and links between routes</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Redux, Context, and Advanced State Management</summary>
-  <p>Fellows are expected to be capable of using Redux, Context, or other state management tools to centralize and manage their state. This includes understanding:</p>
-  <ul>
-    <li>The problem of 'prop drilling' in a stateful vanilla React application</li>
-    <li>The concept and appeal of a 'single source of truth'</li>
-    <li>The concept of a centralized, immutable state, updated only via actions</li>
-    <li>How to utilize, separate, and recombine reducers to centralize actions and parts of state</li>
-    <li>How to discern, based on the scope of a project, whether Redux, Context, or vanilla React is most appropriate</li>
-  </ul>
-  <p>Accordingly, fellows should be able to:</p>
-  <ul>
-    <li>Describe and utilize Redux, including action creators, reducers, containers, and stores</li>
-    <li>Describe the appeal of Context and utilize it to create centralized state on small to medium-sized projects</li>
-    <li>Create React apps using routing, centralized state management, and responsive design to seamlessly integrate and standardize the frontend experience</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Build Tools and Connecting React Applications to Backend Servers</summary>
-  <p>We expect fellows to know the fundamentals of transpiling and bundling React applications, including:</p>
-  <ul>
-    <li>What bundling tools like Webpack do and why they are important</li>
-    <li>What Babel does and how to configure it for a production application</li>
-    <li>When to use automated build tools, such as create-react-app, and what their purpose is</li>
-    <li>How to utilize build tools while deploying a frontend application</li>
-  </ul>
-  <p>Accordingly, fellows should be able to:</p>
-  <ul>
-    <li>Create and configure a React project, either from scratch or via the usage of create-react-app</li>
-    <li>Deploy a React project utilizing platforms like Netlify and Heroku</li>
-  </ul>
-</details>
-
-## Unit 5: Express, SQL, and Full-Stack Applications
+## Unit 3: Express, SQL
 
 <details>
   <summary>How the Internet Works</summary>
@@ -374,6 +279,101 @@
   <p>Accordingly, fellows should be able to:</p>
   <ul>
     <li>Set up an Express application that utilizes Postgres and pg-promise to create/extract/update/delete information from a Postgres database, process it as an HTTP response object, and send it to the frontend</li>
+  </ul>
+</details>
+
+## Unit 4: React Basics
+
+<details>
+  <summary>React Basics</summary>
+  <p>Fellows should be proficient with the basics of React, including:</p>
+  <ul>
+    <li>The concept of a 'single-page application', how React interacts with the DOM, and what's done behind the scenes to render React components in HTML/CSS</li>
+    <li>JSX and component syntax</li>
+    <li>Lifecycle methods (including componentDidMount, componentWillMount, componentWillReceiveProps) and the component lifecycle more generally (what runs when)</li>
+    <li>State, updating state via setState, and passing state via props to child components</li>
+  </ul>
+  <p>Accordingly, fellows should be able to:</p>
+  <ul>
+    <li>Set up React applications, from scratch and utilizing build tools like create-react-app</li>
+    <li>Render visible HTML inside a react-dom connected element</li>
+    <li>Change/update rendered content based on user input, successful AJAX requests, or other triggers</li>
+    <li>Set an initial state and update it based on information received from the user or other third-party sources</li>
+    <li>Utilize information in state to accomplish tasks for the user, such as fetching from an API or processing and rendering state data in useful ways</li>
+    <li>Store a single state and corresponding methods in a parent component and pass down content via props</li>
+  </ul>
+</details>
+
+<details>
+  <summary>REST-ful APIs, JSON, and AJAX</summary>
+  <p>Fellows should have deep knowledge of and familiarity with REST-ful APIs, including:</p>
+  <ul>
+    <li>HTTP and the request-response cycle</li>
+    <li>GET, POST, PATCH, and DELETE requests and the difference between them</li>
+    <li>Utilizing various libraries/services to make AJAX requests to APIs (including fetch, axios, XMLHttpRequest)</li>
+    <li>API routing, wildcards, and formatting appropriate requests</li>
+    <li>Navigating new API documentation to discern how an API might be useful in a project</li>
+    <li>Handling, parsing, and representing data received in JSON format</li>
+  </ul>
+  <p>Accordingly, fellows should be able to:</p>
+  <ul>
+    <li>Query an API in Postman or the browser to get a desired response</li>
+    <li>Build a frontend application that queries remote APIs to render information to the user</li>
+    <li>Utilize CRUD requests to create, update, or delete information from an API, if possible/desirable</li>
+  </ul>
+</details>
+
+## Unit 5: Advanced React and State Management and Full-Stack Applications
+
+<details>
+  <summary>React Routing and Architecture</summary>
+  <p>Fellows are expected to be proficient in advanced React routing, including:</p>
+  <ul>
+    <li>React-router setup in a React project</li>
+    <li>The usage of path versus exact path</li>
+    <li>Nested routing through multiple components in a React project</li>
+    <li>Planning and implementing a sensible structure for a frontend project's routing</li>
+  </ul>
+  <p>Accordingly, fellows should be able to:</p>
+  <ul>
+    <li>Describe the difference between frontend and backend routing</li>
+    <li>Set up a project using react-router that compiles and renders components to users</li>
+    <li>Use routing to render desired components on a page for specific URL extensions</li>
+    <li>Explain the logic behind their component structure, routing and route naming, and links between routes</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Redux, Context, and Advanced State Management</summary>
+  <p>Fellows are expected to be capable of using Redux, Context, or other state management tools to centralize and manage their state. This includes understanding:</p>
+  <ul>
+    <li>The problem of 'prop drilling' in a stateful vanilla React application</li>
+    <li>The concept and appeal of a 'single source of truth'</li>
+    <li>The concept of a centralized, immutable state, updated only via actions</li>
+    <li>How to utilize, separate, and recombine reducers to centralize actions and parts of state</li>
+    <li>How to discern, based on the scope of a project, whether Redux, Context, or vanilla React is most appropriate</li>
+  </ul>
+  <p>Accordingly, fellows should be able to:</p>
+  <ul>
+    <li>Describe and utilize Redux, including action creators, reducers, containers, and stores</li>
+    <li>Describe the appeal of Context and utilize it to create centralized state on small to medium-sized projects</li>
+    <li>Create React apps using routing, centralized state management, and responsive design to seamlessly integrate and standardize the frontend experience</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Build Tools and Connecting React Applications to Backend Servers</summary>
+  <p>We expect fellows to know the fundamentals of transpiling and bundling React applications, including:</p>
+  <ul>
+    <li>What bundling tools like Webpack do and why they are important</li>
+    <li>What Babel does and how to configure it for a production application</li>
+    <li>When to use automated build tools, such as create-react-app, and what their purpose is</li>
+    <li>How to utilize build tools while deploying a frontend application</li>
+  </ul>
+  <p>Accordingly, fellows should be able to:</p>
+  <ul>
+    <li>Create and configure a React project, either from scratch or via the usage of create-react-app</li>
+    <li>Deploy a React project utilizing platforms like Netlify and Heroku</li>
   </ul>
 </details>
 
