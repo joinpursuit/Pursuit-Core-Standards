@@ -3,7 +3,7 @@
 
 ## Introduction 
 
-This curriculum standard assumes no type of programming background from the individual fellow. The Pursuit iOS Development course starts out with the fundamentals of the Swift langauge in Unit 1. At the end of the program into commencement the fellow would have built group iOS projects along with a capstone and portfolio project in iOS. In tandem with the iOS development course, fellows will have adequate data structures and algorithms to be prepared for the whiteboarding interviews into landing their first iOS job.  
+This curriculum standard assumes no type of programming background from the individual fellow. The Pursuit iOS Development course starts out with the fundamentals of the Swift langauge in Unit 1. At the end of the program into commencement the fellow would have built group iOS projects along with a capstone and portfolio projects in iOS. In tandem with the iOS development course, fellows will have adequate data structures and algorithms to be prepared for the whiteboarding interviews into landing their first iOS job.  
 
 ## Unit 1  - Swift Language Fundamentals
 
