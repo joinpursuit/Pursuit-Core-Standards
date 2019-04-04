@@ -8,3 +8,5 @@ Curricula:
 * [Data Structures and Algorithms](curricula/dsa.md)
 * [Industry Fluency](curricula/if.md)
 * [Professional Skills](curricula/ps.md)
+* [Engineering Practices] (curricula/engineering_practices.md)
+
