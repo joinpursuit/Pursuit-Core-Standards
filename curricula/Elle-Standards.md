@@ -10,6 +10,14 @@
     * Arrays
     * Objects
   </details>
+  <details>
+  <summary>iOS</summary>
+    * Ints
+    * Doubles
+    * Floats
+    * Strings
+    * Bools
+  </details>
 
 ### Variables
   **LF.2.a** Understand that a variable/constant is a reference to a value stored in memory. Know how to define and assign variables and constants. Understand the differences and appropriate use cases for variables vs constant.
