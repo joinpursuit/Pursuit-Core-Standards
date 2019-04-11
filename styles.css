@@ -54,6 +54,10 @@ body {
   color: black;
 
 }
+
+#home {
+  color: black;
+}
 .content {
   width:100%;
   overflow: auto;
