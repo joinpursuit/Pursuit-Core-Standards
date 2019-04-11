@@ -1,7 +1,8 @@
 <details>
  <summary>Language Fundamentals [LF]</summary>
+
   <details>
-  <summary><h3>Data Types</h3></summary>
+  <h3><summary>Data Types</summary></h3>
     **LF.1.a** Understand and differentiate among types of data, including selecting the correct type for the task, type casting where necessary, and applying the correct methods and operators for the type.
     <details>
     <summary>Web</summary>
