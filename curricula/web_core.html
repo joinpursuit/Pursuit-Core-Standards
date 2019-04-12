@@ -1,69 +1,36 @@
-# C4Q - Access Code
-## Full Stack Web Development Standards
+<h1>Full Stack Web Development Standards</h1>
 
-## Introduction
+<h2>Introduction</h2>
 
-The purpose of this document is to outline, specifically, standards for the Full Stack Web Development curriculum at Pursuit. This is not meant to be a full-fledged curriculum, nor is it meant to articulate the structure, order, or content of the Full Stack Web Development program.
-
-This outlines, specifically, the information we expect Full Stack Web graduates to know and the things we expect them to be able to do. It will be split into three separate parts:
-
-* Foundational Programming Concepts
-* Frontend Understanding
-* Backend Understanding
-
-This structure will let us specify what concepts belong where, which will give us a better overview of how to schedule/what to prioritize.
-
-Without further ado:
-
-## Foundational Programming Concepts
+<p>The purpose of this document is to outline, specifically, standards for the Full Stack Web Development curriculum at Pursuit. This is not meant to be a full-fledged curriculum, nor is it meant to articulate the structure, order, or content of the Full Stack Web Development program.</p>
 
 
+<h2>Advanced JavaScript</h2>
+  <p><strong>FSW.1</strong> Understand all advanced JavaScript and ES6 concepts/methods.</p>
 
-<details>
-  <summary>Advanced JS/ES6 Concepts</summary>
-  <p>We expect students to understand all advanced JavaScript and ES6 concepts/methods, including:</p>
-  <ul>
-    <li>ES6 variable and function declaration</li>
-    <li>Advanced array methods (at least: forEach, map, filter, reduce)</li>
-    <li>Callback functions, Promises, and asynchronicity</li>
-    <li>The fs module and other advanced built-in Node libraries</li>
-    <li>Advanced object manipulation by way of iteration or direct access (e.g. dot notation)</li>
-    <li>Date and time functionalities</li>
-    <li>Basic regular expressions</li>
-  </ul>
-  <p>Accordingly, we expect students to be able to:</p>
-  <ul>
-    <li>Declare variables using const or let as necessary</li>
-    <li>Utilize advanced enumerables appropriate to the need while iterating (e.g. using filter when they want to exclude particular items from an array)</li>
-    <li>Utilize Promises and callback functions to control when functions/code blocks run</li>
-    <li>Read from and write to text and JSON files</li>
-    <li>Manipulate and extract information from deeply nested objects</li>
-    <li>Utilize date and time to ascertain the current time and compare it to other dates/times</li>
-    <li>Ascertain whether specific substrings are utilized in a document via regex</li>
-  </ul>
-</details>
+    <p><strong>FSW.1.a</strong> Understand advanced array methods (at least: forEach, map, filter, reduce). Utilize advanced enumerables appropriate to the need while iterating (e.g. using filter when they want to exclude particular items from an array</p>
 
+    <p><strong>FSW.1.b</strong> Understand callback functions, Promises, and asynchronicity. Utilize Promises and callback functions to control when functions/code blocks run</p>
 
-<details>
-  <summary>NPM and Package Management</summary>
-  <p>We expect students to know how to utilize and create modules and manage module imports via NPM. Their knowledge should include:</p>
-  <ul>
-    <li>File structuring and organization</li>
-    <li>Creating modules, exporting, importing, and utilizing them appropriately</li>
-    <li>NPM and package management via a package.json file</li>
-    <li>Familiarity with documentation and module usage</li>
-  </ul>
-  <p>Accordingly, we expect students to be able to:</p>
-  <ul>
-    <li>Effectively organize, delegate, and group modules and files</li>
-    <li>Utilize module.exports, export default, require, and import to make data and functions available across file structures</li>
-    <li>Initialize a project with NPM, installing and saving relevant NPM modules</li>
-    <li>Familiarize themselves with new NPM modules quickly using documentation and experimentation in projects</li>
-  </ul>
-</details>
+    <p><strong>FSW.1.c</strong> Understand the fs module and other advanced built-in Node libraries. Read from and write to text and JSON files.</p>
 
+    <p><strong>FSW.1.d</strong> Understand advanced object manipulation by way of iteration or direct access (e.g. dot notation). Manipulate and extract information from deeply nested objects.</p>
 
-## Frontend Understanding
+    <p><strong>FSW.1.e</strong> Know date and time functionalities. Utilize date and time to ascertain the current time and compare it to other dates/times.</p>
+
+    <p><strong>FSW.1.f</strong>Know basic regular expressions. Ascertain whether specific substrings are utilized in a document via regex.</p>
+
+<h2>NPM and Package Management</h2>
+  <p><strong>FSW.2</strong>Know how to utilize and create modules and manage module imports via NPM.</p>
+    <p><strong>FSW.2.a</strong>Know best practices in file structuring and organization. Effectively organize, delegate, and group modules and files</p>
+
+    <p><strong>FSW.2.b</strong>Create, export, import, and utilize modules appropriately.Utilize module.exports, export default, require, and import to make data and functions available across file structures</p>
+
+    <p><strong>FSW.2.c</strong>Utilize NPM and package management via a package.json file. Initialize a project with NPM, installing and saving relevant NPM modules.</p>
+
+    <p><strong>FSW.2.e</strong>Demonstrate familiarity with documentation and module usage. Obtain familarity with new NPM modules quickly using documentation and experimentation in projects.</p>
+
+<h2>Frontend Understanding</h2>
 
 <details>
   <summary>CSS and HTML</summary>
@@ -192,7 +159,7 @@ Without further ado:
   </ul>
 </details>
 
-## Backend Understanding
+<h2>Backend Understanding</h2>
 
 <details>
   <summary>How the Internet Works</summary>
@@ -207,21 +174,6 @@ Without further ado:
   <ul>
     <li>Explain, in detail, what happens when you type 'www.google.com' into a browser and press enter</li>
     <li>Understand and handle various errors based on specific HTTP error codes</li>
-  </ul>
-</details>
-
-<details>
-  <summary>Full Stack Application Architecture</summary>
-  <p>We expect students to understand how to set up and structure a full-stack application. This includes an understanding of:</p>
-  <ul>
-    <li>The difference between frontend and backend applications</li>
-    <li>Servers, ports, and port management</li>
-    <li>Connecting and syncing frontend and backend applications and their corresponding states</li>
-    <li>NPM and module management across multiple NPM based applications</li>
-  </ul>
-  <p>Accordingly, students should be able to:</p>
-  <ul>
-    <li>Plan and execute a full-stack application skeleton with a structure based on specific needs/design principles</li>
   </ul>
 </details>
 
@@ -310,6 +262,23 @@ Without further ado:
   <p>Accordingly, students should be able to:</p>
   <ul>
     <li>Set up an Express application that utilizes Postgres and pg-promise to create/extract/update/delete information from a Postgres database, process it as an HTTP response object, and send it to the frontend</li>
+  </ul>
+</details>
+
+<h2>Full Stack</h2>
+
+<details>
+  <summary>Full Stack Application Architecture</summary>
+  <p>We expect students to understand how to set up and structure a full-stack application. This includes an understanding of:</p>
+  <ul>
+    <li>The difference between frontend and backend applications</li>
+    <li>Servers, ports, and port management</li>
+    <li>Connecting and syncing frontend and backend applications and their corresponding states</li>
+    <li>NPM and module management across multiple NPM based applications</li>
+  </ul>
+  <p>Accordingly, students should be able to:</p>
+  <ul>
+    <li>Plan and execute a full-stack application skeleton with a structure based on specific needs/design principles</li>
   </ul>
 </details>
 
