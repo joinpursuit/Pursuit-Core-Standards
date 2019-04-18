@@ -27,134 +27,57 @@
       </div>
     </div>
     <div class="content">
-# C4Q - Access Code
-## Data Structures and Algorithms Standards
+<h1>Data Structures and Algorithms [DSA]</h1>
 
-## Executive Summary
-Data Structures & Algorithms (DSA) are the building blocks that allow programmers to code and think at a higher level. Data structures are unique ways of organising and collecting data so that we can perform operations in an effective way. Algorithms are a set of instructions that solve hard problems in an efficient manner. Understanding DSA is critical for entry level interviews. DSA is usually technology agnostic so it instills a strong computer science mindset.
+<h2>Introduction</h2>
+<p>Data Structures & Algorithms (DSA) are the building blocks that allow programmers to code and think at a higher level. Data structures are unique ways of organising and collecting data so that we can perform operations in an effective way. Algorithms are a set of instructions that solve hard problems in an efficient manner. Understanding DSA is critical for entry level interviews. DSA is usually technology agnostic so it instills a strong computer science mindset.</p>
 
-## Goals
+<p>## Goals
 
 - Students should be able to build and apply important Data Structures used in the real world.
 - Students should be able to design and apply correct Algorithms for programming problems.
 - Students should get a basic sense of "abstract data structures" and how the flow of data occurs in applications.
 - Students should begin to understand efficiency of code and learn to code beyond the "brute force" route.
 - Students should be able to problem solve at a high level during whiteboarding interviews.
+</p>
 
-## Topics
 
-1. Native & Abstract Data Types
-2. Big(O) Notation
-3. Lists
-4. Stacks & Queues
-5. Hash Table
-6. Recursion + Divide & Conquer
-7. Sorting Algorthims (Bubble / Quick / Merge)
-8. Binary Search Tree
-9. Search Algorithms (Binary Search / Depth First / Breadth First)
-10. Graphs & Dijkstra’s algorithm
+<h2>Abstract Data Structures</h2>
+<p><strong>DSA.1</strong> Understand that native data types and how you associate them is the foundation of all abstract data Structures.</p>
 
-## Curriculum
+<p><strong>DSA.1.a</strong> Show examples of association between data, example: linking lists and graphs</p>
 
-### 1) Native & Abstract Data Types
-<details>
-  <summary>Native Data Types</summary>
-  <ul>
-    <li>Understand that data types are the foundation of all code</li>
-    <li>Different ways of storing information drastically changes the way you approach code, example: Int 1 compared to String "1"</li>
-    <li>Native data types are in every language: Integer, Float, String, Char</li>
-  </ul>
-</details>
+<p><strong>DSA.1.b</strong> Singly Linked List: Understand how to build a Node class and the relationship between nodes, implement SLL class with Head only, implement: push(), pop(), find(), and understand the run time for each method</p>
 
-<details>
-  <summary>Abstract Data Types</summary>
-  <ul>
-    <li>Student should have basic OOP understanding and coding classes</li>
-    <li>Understand that native data types and how you associate them is the foundation of all abstract data types</li>
-    <li>Show examples of association between data, example: linking lists and graphs</li>
-    <li>Understand that what a "Node" is and how you define it in code</li>
-  </ul>
-</details>
+<p><strong>DSA.1.c</strong> Doubly Linked List: Implement DLL class with Head and Tail pointers, implement: push(), pop(), find(), removeAt(), understand the run time for each method.</p>
 
-### 2) Big(O) Notation
+<p><strong>DSA.1.d</strong> Hash Tables: Understand dictionaries, key and value mapping, real world use cases, and common methods and run times. Understand the reason for a Hash Method, how to get O(1) insert and find, collision, and best case vs worst case runtimes.</p>
 
-<details>
-  <summary>Runtime Complexity</summary>
-  <ul>
-    <li>Student should have encountered nested loops</li>
-    <li>Understand the difference between O(1) and O(n)</li>
-    <li>Understand the relationship between data collection size and run time</li>
-    <li>Show and explain big O graph</li>
-  </ul>
-</details>
+<p><strong>DSA.1.e</strong> Stacks: Understand LIFO and real world use cases, implement: push(), pop(), isEmpty(), and understand the run time for each method.</p>
 
-### 3) Lists
+<p><strong>DSA.1.f</strong> Queues: Understand FIFO and real world use cases, implement: Enqueue(), Dequeue(), isEmpty(), and understand the run time for each method.</p>
+<br>
 
-<details>
-  <summary>Singly Linked List</summary>
-  <ul>
-    <li>Student should understand how to build a Node class</li>
-    <li>Understand the relationship between nodes</li>
-    <li>Implement SLL class with Head only</li>
-    <li>Implement: push(), pop(), find()</li>
-    <li>Understand the run time for each method</li>
-  </ul>
-</details>
 
-<details>
-  <summary>Doubly Linked List</summary>
-  <ul>
-    <li>Implement DLL class with Head and Tail pointers</li>
-    <li>Implement: push(), pop(), find(), removeAt()</li>
-    <li>Understand the run time for each method</li>
-  </ul>
-</details>
+<h2>Big(O) Notation</h2>
+<p><strong>DSA.2</strong> Know that big(O) notation is used to describe the worst case space or time required to execute an algorithm.
 
-### 4) Stacks & Queues
+  <p>Know that O(1) describes and algorithm that will require the same time/space no matter the size of the data set it operates on. Explain why a O(1) algorithm's graph is flat line.</p>
 
-<details>
-  <summary>Stacks</summary>
-  <ul>
-    <li>LIFO</li>
-    <li>Student should understand real world use cases</li>
-    <li>Implement: push(), pop(), isEmpty()</li>
-    <li>Understand the run time for each method</li>
-  </ul>
-</details>
+  <p>Know that O(n) describes an algorithm that will increase space/time requirements linearly in proportion to the size of the data set it operates on. Explain why an O(n) algorithm's graph is a straight diagnal line, going up from left to right.</p>
 
-<details>
-  <summary>Queues</summary>
-  <ul>
-    <li>FIFO</li>
-    <li>Student should understand real world use cases</li>
-    <li>Implement: Enqueue(), Dequeue(), isEmpty()</li>
-    <li>Understand the run time for each method</li>
-  </ul>
-</details>
+  <p>Know that O(n<sup>2</sup>) describes an algorithm that will increase space/time requirements in proportion to the square of the size of the data set. Understand that usually refers to an iteration nested within an interation and that additional nestings will lead to O(n<sup>3</sup>), O(n<sup>4</sup>), etc. Know that O(n<sup>2</sup>) will produce a parabolic graph.</p>
 
-### 5) Hash Tables
+  <p>Know that O(2<sup>n</sup>) describes an algorithm that will double in space/time requirements for every increase in the size of the data set. Know that the graph for O(2<sup>n</sup>) is exponential, starting off shallow and increasing sharply until it appears vertical.</p>
 
-<details>
-  <summary>Concept</summary>
-  <ul>
-    <li>Student should understand dictionary</li>
-    <li>Key and Value Mapping</li>
-    <li>Real world use cases</li>
-    <li>Common methods and run times</li>
-  </ul>
-</details>
+  <p>Know that O(log n) describes an algorithm (often binary search) where that
 
-<details>
-  <summary>Implementation</summary>
-  <ul>
-    <li>Student should understand the reason for a Hash Method</li>
-    <li>How to get O(1) insert and find</li>
-    <li>Student should understand collision</li>
-    <li>Student should understand Best Case vs Worst Case runtimes</li>
-  </ul>
-</details>
+  <p>Know the the order of most effient(requires the least space/time) to least efficient (requires the most space/time) is O(1), O(n), O(n<sup>2</sup>), O(2<sup>n</sup>)</p>
 
-### 6) Recursion + Divide & Conquer
+  Runtime Complexity: Understand the difference between O(1) and O(n). Understand the relationship between data collection size and run time. Show and explain big O graph</p>
+
+
+<h2>Recursion</h2>
 
 <details>
   <summary>Recursion Basics</summary>
@@ -176,17 +99,17 @@ Data Structures & Algorithms (DSA) are the building blocks that allow programmer
   </ul>
 </details>
 
-### 7) Sorting Algorthims (Bubble / Quick / Merge)
+<h2>Sorting Algorthims</h2>
 
-<details>
-  <summary>Sorting Premise and Bubble Sort</summary>
+
+  <p>Sorting Premise and Bubble Sort</p>
   <ul>
     <li>Student should understand why we sort and why it's useful</li>
     <li>Real world examples of sorting</li>
     <li>Compare different sorting algorithms and runtimes</li>
     <li>Implement Bubble Sort</li>
   </ul>
-</details>
+
 
 <details>
   <summary>Quick Sort</summary>
@@ -255,8 +178,8 @@ Data Structures & Algorithms (DSA) are the building blocks that allow programmer
     <li>Implement Dijkstra's Algorithm</li>
   </ul>
 </details>
-</div>
-</div>
-</div>
+    </div>
+  </div>
+  </div>
 </body>
 </html>
