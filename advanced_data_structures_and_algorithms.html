@@ -1,0 +1,122 @@
+<html>
+<head>
+
+  <title>Core Standards: Data Structures and Algorithms</title>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+</head>
+<body>
+  <div class="container">
+  <div class="container-inner">
+    <div class="left-sidebar">
+      <div class="home-anchor">
+        <h3><a id="home" href="index.html">Pursuit Core Standards</a></h3>
+      </div>
+      <div class="navigation-links">
+        <div class="navigation-link-item"><a href="ps.html">Professional Skills</a></div>
+        <div class="navigation-link-item"><a href="if.html">Industry Fluency</a></div>
+        <div class="navigation-link-item"><a href="language_fundamentals.html">Language Fundamentals</a></div>
+        <div class="navigation-link-item"><a href="engineering_foundations.html">Engineering Foundations</a></div>
+        <div class="navigation-link-item"><a href="advanced_data_structures_and_algorithms.html">Data Structures and Algorithms</a></div>
+        <div class="navigation-link-item"><a href="web_core.html">Full Stack Web</a></div>
+        <div class="navigation-link-item"><a href="ios_core.html">iOS Mobile</a></div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Data Structures and Algorithms [DSA]</h1>
+
+      <h2>Introduction</h2>
+
+      <p>Data Structures & Algorithms (DSA) are the building blocks that allow programmers to code and think at a higher level. Data structures are unique ways of organising and collecting data so that we can perform operations in an effective way. Algorithms are a set of instructions that solve hard problems in an efficient manner. Understanding DSA is critical for entry level interviews. DSA is usually technology agnostic so it instills a strong computer science mindset.</p>
+      <br>
+
+      <h2>Abstract Data Structures</h2>
+
+      <p id="DSA.1"><strong>DSA.1</strong> Understand that native data types and how you associate them is the foundation of all abstract data Structures.</p>
+
+      <p id="DSA.1.a"><strong>DSA.1.a</strong> Show examples of association between data, example: linking lists and graphs</p>
+
+      <p id="DSA.1.b"><strong>DSA.1.b</strong> Singly Linked List: Understand how to build a Node class and the relationship between nodes, implement SLL class with Head only, implement: push(), pop(), find(), and understand the run time for each method</p>
+
+      <p id="DSA.1.c"><strong>DSA.1.c</strong> Doubly Linked List: Implement DLL class with Head and Tail pointers, implement: push(), pop(), find(), removeAt(), understand the run time for each method.</p>
+
+      <p id="DSA.1.d"><strong>DSA.1.d</strong> Hash Tables: Understand dictionaries, key and value mapping, real world use cases, and common methods and run times. Understand the reason for a Hash Method, how to get O(1) insert and find, collision, and best case vs worst case runtimes.</p>
+
+      <p id="DSA.1.e"><strong>DSA.1.e</strong> Stacks: Understand LIFO and real world use cases, implement: push(), pop(), isEmpty(), and understand the run time for each method.</p>
+
+      <p id="DSA.1.f"><strong>DSA.1.f</strong> Queues: Understand FIFO and real world use cases, implement: Enqueue(), Dequeue(), isEmpty(), and understand the run time for each method.</p>
+
+      <p id="DSA.1.f"><strong>DSA.1.f</strong> Trees: Understand abstraction of a tree data structure and be able to implement it using nodes. Know the use cases for trees.</p>
+
+      <p id="DSA.1.f"><strong>DSA.1.f</strong> Graphs: Understand abstraction of a graph data structure and be able to implement it using nodes. Know the use cases for graphs.</p>
+      <br>
+
+      <h2>Big(O) Notation</h2>
+
+      <p id="DSA.2"><strong>DSA.2</strong> Know that big(O) notation is used to describe the worst case space or time required to execute an algorithm.
+
+      <p id="DSA.2.a"><strong>DSA.2.a</strong> Know that O(1) describes and algorithm that will require the same time/space no matter the size of the data set it operates on. Explain why a O(1) algorithm's graph is flat line.</p>
+
+      <p id="DSA.2.b"><strong>DSA.2.b</strong> Know that O(n) describes an algorithm that will increase space/time requirements linearly in proportion to the size of the data set it operates on. Explain why an O(n) algorithm's graph is a straight diagnal line, going up from left to right.</p>
+
+      <p id="DSA.2.c"><strong>DSA.2.c</strong> Know that O(n<sup>2</sup>) describes an algorithm that will increase space/time requirements in proportion to the square of the size of the data set. Understand that usually refers to an iteration nested within an interation and that additional nestings will lead to O(n<sup>3</sup>), O(n<sup>4</sup>), etc. Know that O(n<sup>2</sup>) will produce a parabolic graph.</p>
+
+      <p id="DSA.2.d"><strong>DSA.2.d</strong> Know that O(2<sup>n</sup>) describes an algorithm that will double in space/time requirements for every increase in the size of the data set. Know that the graph for O(2<sup>n</sup>) is exponential, starting off shallow and increasing sharply until it appears vertical.</p>
+
+      <p id="DSA.2.e"><strong>DSA.2.e</strong> Know that O(log n) describes an algorithm (most commonly binary search) where the data set is halved at each iteration so that the increase in space/time requirements increases very little with an increase in the size of data set. Know that the graph for O(log n) is a horizontal parabola, starting off sharply, then leveling off horzontally.</p>
+
+      <p id="DSA.2.f"><strong>DSA.2.f</strong> Know the the order of most effient(requires the least space/time) to least efficient (requires the most space/time) is O(1), O(log n), O(n), O(n<sup>2</sup>), O(2<sup>n</sup>)</p>
+      <br>
+
+      <h2>Recursion</h2>
+
+      <p id="DSA.3"><strong>DSA.3</strong> Understand that a recursive function is any function that calls itself until a task is complete. Able to write recursive functions to solve a problem.</p>
+
+      <p id="DSA.3.a"><strong>DSA.3.a</strong> Understand the concept of a base case and how to determine the base case for a recursive solution.</p>
+
+      <p id="DSA.3.b"><strong>DSA.3.b</strong> Understand how to write a recursive solution that avoids cycles and simplifies the problem with each call.</p>
+
+      <p id="DSA.3.c"><strong>DSA.3.c</strong> Able to determine when a recursive solution is most appropriate (such as with heirarchies, graphs, or networks) and give the big O for the solution in comparison to an iterative solution.</p>
+
+      <p id="DSA.3.d"><strong>DSA.3.d</strong> Understand the call stack's relationship to recursion and how the returns bubble up through the stack in a recursive function.</p>
+
+      <p id="DSA.3.e">strong>DSA.3.e</strong> Able to fluently solve common recursive problems such as factorials and fibonacci.</p>
+
+      Dynamic programming, use from cache memoization
+      <br>
+
+      <h2>Sorting Algorthims</h2>
+
+      <p id="DSA.4"><strong>DSA.4</strong> Understand why we sort and why it's useful. Know real world examples of sorting. Able to compare different sorting algorithms and run times.</p>
+
+      <p id="DSA.4.a"><strong>DSA.4.a</strong> Implement Bubble Sort and know it's run time.</p>
+
+      <p id="DSA.4.b"><strong>DSA.4.b</strong> Implement Quick Sort and know it's run time.</p>
+
+      <p id="DSA.4.c"><strong>DSA.4.c</strong> Implement Merge Sort and know it's run time.</p>
+      <br>
+
+      <h2>Search Algorithms</h2>
+
+      <p id="DSA.5"><strong>DSA.5</strong> Understand the purpose of search algorithms, when to implement them, and able to compare different search algorithms and run times.</p>
+
+      <p id="DSA.5.a"><strong>DSA.5.a</strong> Divide and Conquer: Know how to brute force seachr an array and understand the worst case for brute force search.</p>
+
+      <p id="DSA.5.b"><strong>DSA.5.b</strong> Binary search: Understand binary search, know the worst case scenario for binary search, and implement binary search.</p>
+
+      <p id="DSA.5.c"><strong>DSA.5.c</strong> Binary Search Tree: Understand rules of a BST, understand use case of a BST, and implement insert(), find(), Min() and Max().</p>
+
+      <p id="DSA.5.d"><strong>DSA.5.d</strong> Depth First / Breadth First: Implement Depth First Search and Breadth First Search.</p>
+
+      <p id="DSA.5.e"><strong>DSA.5.e</strong> Dijkstra’s Algorithm: Understand concept of shortest path algorithm and vertex. Understand use cases, example: Google Maps, MTA Route to Destination. Implement Dijkstra's Algorithm.</p>
+      <br>
+
+    </div>
+  </div>
+  </div>
+</body>
+</html>
